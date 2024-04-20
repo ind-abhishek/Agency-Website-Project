@@ -1,0 +1,67 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: #5c45fd;
+  --secondery-black: #161616;
+  --third-gray: #969799;
+  --fourth-white: #f5f5f5;
+  --fifth-violet: #a79bff;
+}
+
+/* Navbar */
+
+.zenlogo {
+  height: 120px;
+  width: 100%;
+}
+
+nav {
+  border: 5px solid #202020;
+  margin-top: 0;
+  border-left: 0;
+  border-right: 0;
+  background: var(--secondery-black);
+}
+
+nav ul li a {
+  color: var(--fourth-white);
+  font-weight: 400;
+}
+
+nav ul li a:hover {
+  color: var(--fifth-violet);
+}
+
+.letTalk {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.letTalk:hover {
+  background-color: var(--fifth-violet);
+}
+
+/* Notice */
+.notice {
+  background-color: var(--secondery-black);
+  font-size: 14px;
+}
+
+.notbtn1 {
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #1f1e26;
+  border-radius: 25px;
+}
+
+.notbtn2 {
+  padding-left: 25px;
+  padding-right: 25px;
+  border: 1px solid var(--primary-color);
+}
+
+.notbtn2:hover {
+  background: var(--primary-color);
+}
