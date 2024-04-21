@@ -1,11 +1,9 @@
 import React from "react";
 import { MdArrowOutward } from "react-icons/md";
-import Notice from "./Notice";
 
 const Navbar = () => {
   return (
     <>
-      <Notice></Notice>
       <nav className="">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
           <a href="#" className="">

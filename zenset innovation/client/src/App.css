@@ -10,6 +10,52 @@
   --fifth-violet: #a79bff;
 }
 
+/* Glow */
+
+body {
+  background-color: black;
+  height: 100vh;
+  margin: 0rem;
+  /* overflow: hidden; */
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+
+  50% {
+    scale: 1 1.5;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
+
+#blob {
+  background-color: white;
+  height: 34vmax;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgb(105, 79, 211), #242044);
+  animation: rotate 20s infinite;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+#blur {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  backdrop-filter: blur(12vmax);
+}
+
 /* Navbar */
 
 .zenlogo {
@@ -18,11 +64,14 @@
 }
 
 nav {
-  border: 5px solid #202020;
+  border: 1px solid #202020;
   margin-top: 0;
   border-left: 0;
   border-right: 0;
-  background: var(--secondery-black);
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 2;
+  position: relative;
 }
 
 nav ul li a {
@@ -45,8 +94,9 @@ nav ul li a:hover {
 
 /* Notice */
 .notice {
-  background-color: var(--secondery-black);
   font-size: 14px;
+  z-index: 2;
+  position: relative;
 }
 
 .notbtn1 {
@@ -64,4 +114,25 @@ nav ul li a:hover {
 
 .notbtn2:hover {
   background: var(--primary-color);
+}
+
+/* Home */
+.home {
+  position: relative;
+  z-index: 5;
+}
+.hero {
+  width: 70%;
+}
+
+h1 {
+  color: white;
+  font-size: 105px;
+  font-weight: 600;
+  position: relative;
+  z-index: 3;
+}
+
+.heroDetail {
+  width: 50%;
 }
