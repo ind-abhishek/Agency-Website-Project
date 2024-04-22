@@ -8,131 +8,20 @@
   --third-gray: #969799;
   --fourth-white: #f5f5f5;
   --fifth-violet: #a79bff;
+  --boder-gray: #202020;
 }
 
-/* Glow */
-
+html,
 body {
-  background-color: black;
-  height: 100vh;
-  margin: 0rem;
-  /* overflow: hidden; */
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #000000;
 }
 
-@keyframes rotate {
-  from {
-    rotate: 0deg;
-  }
-
-  50% {
-    scale: 1 1.5;
-  }
-
-  to {
-    rotate: 360deg;
-  }
-}
-
-#blob {
-  background-color: white;
-  height: 34vmax;
-  aspect-ratio: 1;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  translate: -50% -50%;
-  border-radius: 50%;
-  background: linear-gradient(to right, rgb(105, 79, 211), #242044);
-  animation: rotate 20s infinite;
-  opacity: 0.5;
-  z-index: 1;
-}
-
-#blur {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: 2;
-  backdrop-filter: blur(12vmax);
-}
-
-/* Navbar */
-
-.zenlogo {
-  height: 120px;
-  width: 100%;
-}
-
-nav {
-  border: 1px solid #202020;
-  margin-top: 0;
-  border-left: 0;
-  border-right: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  z-index: 2;
-  position: relative;
-}
-
-nav ul li a {
-  color: var(--fourth-white);
-  font-weight: 400;
-}
-
-nav ul li a:hover {
-  color: var(--fifth-violet);
-}
-
-.letTalk {
-  background-color: var(--primary-color);
-  border: none;
-}
-
-.letTalk:hover {
-  background-color: var(--fifth-violet);
-}
-
-/* Notice */
-.notice {
-  font-size: 14px;
-  z-index: 2;
-  position: relative;
-}
-
-.notbtn1 {
-  padding-left: 25px;
-  padding-right: 25px;
-  background-color: #1f1e26;
-  border-radius: 25px;
-}
-
-.notbtn2 {
-  padding-left: 25px;
-  padding-right: 25px;
-  border: 1px solid var(--primary-color);
-}
-
-.notbtn2:hover {
-  background: var(--primary-color);
-}
-
-/* Home */
-.home {
-  position: relative;
-  z-index: 5;
-}
-.hero {
-  width: 70%;
-}
-
-h1 {
-  color: white;
-  font-size: 105px;
-  font-weight: 600;
-  position: relative;
-  z-index: 3;
-}
-
-.heroDetail {
-  width: 50%;
+.screen {
+  margin-top: 30px;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
 }

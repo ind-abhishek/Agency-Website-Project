@@ -1,0 +1,38 @@
+/* .bgLineContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 90px);
+  gap: 20%;
+} */
+
+.bgLine {
+  position: absolute;
+  z-index: 9;
+  /* background-color: rgb(130, 154, 130); */
+  border: 1px solid var(--boder-gray);
+  border-top: none;
+  border-bottom: none;
+  height: 100vh;
+  margin: 50px;
+  padding: 150px;
+  color: rgb(255, 255, 255);
+  font-size: large;
+  font-weight: bolder;
+}
+
+.bgLine1 {
+  right: 100px;
+}
+.bgLine2 {
+  right: 700px;
+}
+
+.bgLine3 {
+  right: 1300px;
+}
+
+.bgLine4 {
+  right: 1900px;
+}
+.bgLine5 {
+  right: 2400px;
+}

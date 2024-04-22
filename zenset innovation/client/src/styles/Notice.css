@@ -1,0 +1,23 @@
+/* Notice */
+.notice {
+  font-size: 14px;
+  z-index: 2;
+  position: relative;
+}
+
+.notbtn1 {
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #1f1e26;
+  border-radius: 25px;
+}
+
+.notbtn2 {
+  padding-left: 25px;
+  padding-right: 25px;
+  border: 1px solid var(--primary-color);
+}
+
+.notbtn2:hover {
+  background: var(--primary-color);
+}

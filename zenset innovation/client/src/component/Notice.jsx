@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Notice.css";
 import { MdOutlineCancel } from "react-icons/md";
 
 const Notice = () => {

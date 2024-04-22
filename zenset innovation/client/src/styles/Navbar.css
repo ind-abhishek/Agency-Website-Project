@@ -1,0 +1,35 @@
+/* Navbar */
+
+.zenlogo {
+  height: 120px;
+  width: 100%;
+}
+
+nav {
+  border: 1px solid #202020;
+  margin-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 2;
+  position: relative;
+}
+
+nav ul li a {
+  color: var(--third-gray);
+  font-weight: 400;
+}
+
+nav ul li a:hover {
+  color: var(--fifth-violet);
+}
+
+.letTalk {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.letTalk:hover {
+  background-color: var(--fifth-violet);
+}

@@ -1,0 +1,50 @@
+/* Home */
+.home {
+  position: relative;
+  display: grid;
+  z-index: 999;
+}
+.hero {
+  width: 70%;
+}
+
+h1 {
+  color: white;
+  font-size: 105px;
+  font-weight: 600;
+  position: relative;
+  z-index: 10;
+}
+
+.amazing {
+  background: -webkit-linear-gradient(
+    207deg,
+    rgba(100, 72, 254, 1) 0%,
+
+    rgba(166, 154, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dot {
+  color: var(--primary-color);
+}
+.heroDetail {
+  width: 50%;
+}
+
+.notbtn3 {
+  padding-top: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+  border: 1px solid var(--primary-color);
+}
+
+.notbtn3:hover {
+  background: var(--primary-color);
+}
+
+.col-gray {
+  color: var(--third-gray);
+}

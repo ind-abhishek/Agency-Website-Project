@@ -1,0 +1,25 @@
+/* BrandCards */
+
+.brandCard {
+  width: 80%;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 20px;
+  padding: 40px;
+}
+
+.slick-slide {
+  padding: 0 10px; /* Adjust padding to create space between slides */
+}
+
+.brandLogoContainer {
+  text-align: center;
+  border: 3px solid var(--boder-gray);
+  font-size: 100px;
+  border-radius: 12px;
+}
+
+.brandLogoContainer:hover {
+  background: var(--fourth-white);
+  color: var(--primary-color);
+}

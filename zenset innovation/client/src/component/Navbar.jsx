@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Navbar.css";
 import { MdArrowOutward } from "react-icons/md";
 
 const Navbar = () => {
