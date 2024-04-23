@@ -23,9 +23,9 @@ const Glow = () => {
   }, []);
 
   return (
-    <div className="bgGlow">
+    <div className="bgGlow mx-auto">
       <div id="blob" style={{ left: position.x, top: position.y }}></div>
-
+      <div className="higlighter opacity-20"></div>
       <div id="blur">
         <Notice></Notice>
         <Navbar></Navbar>

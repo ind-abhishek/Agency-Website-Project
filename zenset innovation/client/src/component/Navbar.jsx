@@ -7,13 +7,15 @@ const Navbar = () => {
     <>
       <nav className="">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
-          <a href="#" className="">
-            <img
-              src="/public/zenLogo.png"
-              className="zenlogo"
-              alt="Zenset Logo"
-            />
-          </a>
+          <div className="logoContain">
+            <a href="#" className="">
+              <img
+                src="/public/zenLogo.png"
+                className="zenlogo"
+                alt="Zenset Logo"
+              />
+            </a>
+          </div>
 
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <button
@@ -55,7 +57,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#"
-                  className="block py-2 px-3 md:p-0 text-white rounded md:bg-transparent"
+                  className="block py-2 px-3 md:p-0 rounded md:bg-transparent"
                   aria-current="page"
                 >
                   Why Us
@@ -64,7 +66,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#"
-                  className="block py-2 px-3 md:p-0 text-white rounded md:bg-transparent"
+                  className="block py-2 px-3 md:p-0 rounded md:bg-transparent"
                 >
                   Case Studies
                 </a>
@@ -72,7 +74,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#"
-                  className="block py-2 px-3 md:p-0 text-white rounded md:bg-transparent"
+                  className="block py-2 px-3 md:p-0 rounded md:bg-transparent"
                 >
                   Testmonials
                 </a>
@@ -80,7 +82,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#"
-                  className="block py-2 px-3 md:p-0 text-white rounded md:bg-transparent"
+                  className="block py-2 px-3 md:p-0 rounded md:bg-transparent"
                 >
                   FAQ
                 </a>

@@ -9,7 +9,8 @@ const Home = () => {
   return (
     <>
       <Star></Star>
-      <div className="home screen ">
+
+      <div className="home screen mx-auto max-w-screen-xl items-center px-50">
         <div className="hero">
           <h1>
             We develop
@@ -23,7 +24,7 @@ const Home = () => {
           </h1>
         </div>
         <div className="heroDetail">
-          <p className="text-white text-lg">
+          <p className=" text-lg">
             Discover our seamless workflow as we transform Figma designs into
             stunning Webflow websites. Explore the synergy between design and
             development for a pixel-perfect online experience.
