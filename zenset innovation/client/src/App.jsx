@@ -1,16 +1,16 @@
 import { useState } from "react";
 import zenLogo from "/zen.svg";
 import "./App.css";
-
-import Navbar from "./component/Navbar";
-import Glow from "./component/Glow";
+import Home from "./screen/Home";
+import Service from "./screen/Service";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <Glow></Glow>
+      <Home></Home>
+      {/* <Service></Service> */}
     </>
   );
 }

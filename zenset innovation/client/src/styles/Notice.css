@@ -20,4 +20,5 @@
 
 .notbtn2:hover {
   background: var(--primary-color);
+  transition: 0.4s;
 }

@@ -1,0 +1,21 @@
+/* Service */
+
+.portCard {
+  padding: 0;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.portImage {
+  width: 100%;
+  height: 100%;
+}
+
+.cardOverlay {
+  position: absolute;
+  background-color: rgb(39, 100, 138);
+  padding: 8px 153px 8px 153px;
+  font-size: 14px;
+}

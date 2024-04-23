@@ -1,13 +1,4 @@
-.servHero {
-  display: grid;
-  width: 100%;
-
-  margin: 50px;
-  margin-left: 0;
-  padding: 10px;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-}
+/* Service */
 
 .servCard {
   background-color: var(--card-bg);
@@ -15,12 +6,21 @@
   padding-top: 30px;
   padding-bottom: 10px;
   border: 1px solid var(--third-gray);
+  z-index: 5;
+}
+
+.servCard:hover {
+  margin-top: 0;
+  margin-bottom: 15px;
+  transition: 0.5s;
 }
 
 .servLogo {
   display: inline-block;
   background-color: var(--card-bg);
-  padding: 20px;
+  padding: 13px;
+  color: var(--fifth-violet);
+  font-size: 33px;
 }
 
 .servCardTitel {
@@ -38,4 +38,10 @@
   padding: 20px;
   margin-top: 30px;
   border: 1px solid var(--third-gray);
+}
+
+.servNext:hover {
+  background-color: var(--fourth-white);
+  color: var(--secondery-black);
+  transition: 0.6s;
 }

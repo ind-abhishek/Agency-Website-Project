@@ -37,4 +37,5 @@ nav ul li a:hover {
 
 .letTalk:hover {
   background-color: var(--fifth-violet);
+  transition: 0.4s;
 }
