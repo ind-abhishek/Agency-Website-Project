@@ -23,66 +23,97 @@ const Portfolio = () => {
           </h3>
         </div>
 
-        <div className="cardContain gap-5">
+        <div className="cardContain ">
           {/* card */}
 
-          <div className="portCard flex">
-            <a href="#">
-              <img
-                className="portImage rounded-xl"
-                src="https://cdn.dribbble.com/userupload/3748038/file/still-2f97314e57181874b88fea72f13f0017.png?resize=400x300&vertical=center"
-                alt=""
-              />
-            </a>
-            <div className="cardOverlay ">
-              <div>
-                <p className="inline">See Project </p>
-                <FaArrowRight className="inline" />
+          <div className="projectCard rounded-lg">
+            <img
+              className="project-image"
+              src="https://cdn.dribbble.com/userupload/13217802/file/original-5d79d6d536841524fa97beb19de8ff48.png?crop=0x0-3201x2401&resize=400x300&vertical=center"
+              alt="Project Image"
+            />
+            <div className="cardOverlay">
+              <div className="overlay-content ">
+                <a href="#" className="inline">
+                  See Project <FaArrowRight className="inline" />
+                </a>
               </div>
             </div>
           </div>
 
-          <div>
-            <a href="#">
-              <img
-                src="https://cdn.dribbble.com/userupload/3844267/file/still-127c75a6ee5c1de8e2dcae6073a7f7d1.png?resize=400x300&vertical=center"
-                alt=""
-              />
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <img
-                src="https://cdn.dribbble.com/users/1656786/screenshots/16690195/media/38174e2dd115a20f0a6fbe7f409058c6.png?resize=1000x750&vertical=center"
-                alt=""
-              />
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <img
-                src="https://cdn.dribbble.com/users/1656786/screenshots/16690195/media/38174e2dd115a20f0a6fbe7f409058c6.png?resize=1000x750&vertical=center"
-                alt=""
-              />
-            </a>
+          <div className="projectCard rounded-lg">
+            <img
+              className="project-image"
+              src="https://cdn.dribbble.com/userupload/14206534/file/original-4f402b9e37ae4086980b884929632313.png?resize=400x300&vertical=center"
+              alt="Project Image"
+            />
+            <div className="cardOverlay">
+              <div className="overlay-content">
+                <a href="#" className="inline">
+                  See Project <FaArrowRight className="inline" />
+                </a>
+              </div>
+            </div>
           </div>
 
-          <div>
-            <a href="#">
-              <img
-                src="https://cdn.dribbble.com/users/1656786/screenshots/16690195/media/38174e2dd115a20f0a6fbe7f409058c6.png?resize=1000x750&vertical=center"
-                alt=""
-              />
-            </a>
+          <div className="projectCard rounded-lg">
+            <img
+              className="project-image"
+              src="https://cdn.dribbble.com/userupload/13124712/file/original-a61847733df53a582d567ade3e80200f.jpeg?crop=0x0-4800x3600&resize=400x300&vertical=center"
+              alt="Project Image"
+            />
+            <div className="cardOverlay">
+              <div className="overlay-content">
+                <a href="#" className="inline">
+                  See Project <FaArrowRight className="inline" />
+                </a>
+              </div>
+            </div>
           </div>
 
-          <div>
-            <a href="#">
-              <img
-                src="https://cdn.dribbble.com/users/1656786/screenshots/16690195/media/38174e2dd115a20f0a6fbe7f409058c6.png?resize=1000x750&vertical=center"
-                alt=""
-              />
-            </a>
+          <div className="projectCard rounded-lg">
+            <img
+              className="project-image"
+              src="https://cdn.dribbble.com/userupload/14000097/file/original-0848113383fcfbef2b8d4d70ca0393e1.png?resize=400x300&vertical=center"
+              alt="Project Image"
+            />
+            <div className="cardOverlay">
+              <div className="overlay-content">
+                <a href="#" className="inline">
+                  See Project <FaArrowRight className="inline" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="projectCard rounded-lg">
+            <img
+              className="project-image"
+              src="https://cdn.dribbble.com/userupload/5999267/file/still-11c6aa9ded2f76db4b4072d4ae7def8a.png?resize=400x300&vertical=center"
+              alt="Project Image"
+            />
+            <div className="cardOverlay">
+              <div className="overlay-content">
+                <a href="#" className="inline">
+                  See Project <FaArrowRight className="inline" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="projectCard rounded-lg">
+            <img
+              className="project-image"
+              src="https://cdn.dribbble.com/userupload/2651410/file/still-aaab38f67d486caba4fcacfb6bac8b89.png?resize=400x300&vertical=center"
+              alt="Project Image"
+            />
+            <div className="cardOverlay">
+              <div className="overlay-content">
+                <a href="#" className="inline">
+                  See Project <FaArrowRight className="inline" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
