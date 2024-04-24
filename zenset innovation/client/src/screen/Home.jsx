@@ -7,6 +7,7 @@ import Notice from "../component/Notice";
 import BgLine from "../component/BgLine";
 import Service from "./Service";
 import Portfolio from "./Portfolio";
+import Pricing from "./Pricing";
 
 const Home = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -86,6 +87,18 @@ const Home = () => {
         <div className="portfolioWrapper">
           <BgLine className="opacity-10"></BgLine>
           <Portfolio></Portfolio>
+          <div className="bluri">
+            <div className="higlighter opacity-20"></div>
+            <div
+              className="blobi"
+              style={{ left: position.x, top: position.y }}
+            ></div>
+          </div>
+        </div>
+
+        <div className="pricingWrapper">
+          <BgLine className="opacity-10"></BgLine>
+          <Pricing></Pricing>
           <div className="bluri">
             <div className="higlighter opacity-20"></div>
             <div

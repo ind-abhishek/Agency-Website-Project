@@ -20,11 +20,6 @@ body {
 }
 
 .screen {
-  /* margin-top: 30px;
-  margin-left: 130px;
-  margin-right: 130px;
-  padding-left: 130px;
-  padding-right: 130px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -67,4 +62,17 @@ body {
   padding-top: 10px;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
+}
+
+.notbtn3 {
+  margin-top: 16px;
+  padding: 10px 25px 10px 25px;
+  border: 1px solid var(--primary-color);
+  z-index: 999;
+  border-radius: 6px;
+}
+
+.notbtn3:hover {
+  background: var(--primary-color);
+  transition: 0.4s;
 }

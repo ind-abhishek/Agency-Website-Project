@@ -121,19 +121,6 @@
   color: var(--third-gray);
 }
 
-.notbtn3 {
-  padding-top: 0;
-  padding-left: 25px;
-  padding-right: 25px;
-  border: 1px solid var(--primary-color);
-  z-index: 999;
-}
-
-.notbtn3:hover {
-  background: var(--primary-color);
-  transition: 0.4s;
-}
-
 .col-gray {
   color: var(--third-gray);
 }
