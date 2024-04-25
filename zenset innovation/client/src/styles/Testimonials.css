@@ -1,0 +1,46 @@
+.testCard {
+  width: 80%;
+
+  padding: 20px 0 20px 20px;
+}
+.testSlide {
+  background-color: var(--card-bg);
+  margin-top: 50px;
+  border-radius: 12px;
+  border: 1px solid var(--third-gray);
+  height: 100%;
+}
+
+.testTitel {
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+  padding: 50px 120px 50px 120px;
+}
+
+.testDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: var(--fourth-white);
+}
+
+.testDetail img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin: 5px 0 5px 0;
+}
+
+.testDetail h3 {
+  margin: 2px 0 1px 0;
+  color: var(--fourth-white);
+  font-size: 16px;
+}
+
+.testDetail p {
+  color: var(--third-gray);
+  margin: 1px 0 30px 0;
+}
