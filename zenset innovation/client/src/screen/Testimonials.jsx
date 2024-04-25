@@ -72,11 +72,11 @@ function Testimonials() {
             </div>
             <div className="testDetail">
               <img
-                src="https://i.pinimg.com/564x/96/5d/7f/965d7f34e9f67fc3dec218a740b4142c.jpg"
+                src="https://i.pinimg.com/736x/4f/1b/35/4f1b351d3196822a66c746e0c71cbab3.jpg"
                 alt=""
               />
-              <h3>Nitish Raiput</h3>
-              <p>Funder, iAcademy</p>
+              <h3>Yuri Chwn</h3>
+              <p>CEO, doWht.in</p>
             </div>
           </SwiperSlide>
         </Swiper>
