@@ -1,7 +1,7 @@
 /* BrandCards */
 
 .brandCard {
-  width: 70%;
+  width: 85%;
   overflow: hidden;
   margin: auto;
   margin-top: 20px;
@@ -15,8 +15,12 @@
 .brandLogoContainer {
   text-align: center;
   border: 3px solid var(--boder-gray);
-  font-size: 100px;
+  font-size: 70px;
   border-radius: 12px;
+}
+
+.brandLogo {
+  /* font-size: 70px; */
 }
 
 .brandLogoContainer:hover {

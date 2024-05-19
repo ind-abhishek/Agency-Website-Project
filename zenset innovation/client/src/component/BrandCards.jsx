@@ -4,6 +4,11 @@ import { FaGooglePay } from "react-icons/fa6";
 import { SiTheboringcompany } from "react-icons/si";
 import { SiMcdonalds } from "react-icons/si";
 import { SiYoutubetv } from "react-icons/si";
+
+import { FaAmazon } from "react-icons/fa";
+import { SiAmazonmusic } from "react-icons/si";
+import { FaWhatsapp } from "react-icons/fa";
+
 import { FaTwitch } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -41,23 +46,37 @@ const BrandCards = () => {
 
       <Slider className="brandCard" {...settings}>
         <div className="brandLogoContainer">
-          <FaGooglePay className="inline" />
+          <FaGooglePay className="inline brandLogo" />
         </div>
 
         <div className="brandLogoContainer">
-          <SiTheboringcompany className="inline" />
+          <SiTheboringcompany className="inline brandLogo" />
         </div>
 
         <div className="brandLogoContainer">
-          <SiMcdonalds className="inline" />
+          <SiMcdonalds className="inline brandLogo" />
         </div>
 
         <div className="brandLogoContainer">
-          <SiYoutubetv className="inline" />
+          <SiYoutubetv className="inline brandLogo" />
         </div>
 
         <div className="brandLogoContainer">
-          <FaTwitch className="inline" />
+          <FaTwitch className="inline brandLogo" />
+        </div>
+
+        {/* more */}
+
+        <div className="brandLogoContainer">
+          <FaAmazon className="inline brandLogo" />
+        </div>
+
+        <div className="brandLogoContainer">
+          <SiAmazonmusic className="inline brandLogo" />
+        </div>
+
+        <div className="brandLogoContainer">
+          <FaWhatsapp className="inline brandLogo" />
         </div>
       </Slider>
     </div>

@@ -1,5 +1,5 @@
 .testCard {
-  width: 80%;
+  width: 75%;
 
   padding: 20px 0 20px 20px;
 }
@@ -12,10 +12,10 @@
 }
 
 .testTitel {
-  font-size: 17px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 400;
   text-align: center;
-  padding: 50px 120px 50px 120px;
+  padding: 50px 110px 50px 110px;
 }
 
 .testDetail {
@@ -37,10 +37,11 @@
 .testDetail h3 {
   margin: 2px 0 1px 0;
   color: var(--fourth-white);
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .testDetail p {
   color: var(--third-gray);
   margin: 1px 0 30px 0;
+  font-size: 15px;
 }

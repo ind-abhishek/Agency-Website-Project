@@ -3,8 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .container {
-  max-width: 1170px;
+  max-width: 80%;
   margin: auto;
 }
 .row {
@@ -35,7 +36,7 @@ ul {
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: #e91e63;
+  background-color: var(--fifth-violet);
   height: 2px;
   box-sizing: border-box;
   width: 50px;
@@ -58,20 +59,21 @@ ul {
   padding-left: 8px;
 }
 .footer-col .social-links a {
+  padding: 6px;
   display: inline-block;
-  height: 40px;
-  width: 40px;
-  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 20px;
   margin: 0 10px 10px 0;
+  justify-content: center;
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  color: #ffffff;
+  background-color: var(--fourth-white);
+  color: var(--secondery-black);
   transition: all 0.5s ease;
 }
 .footer-col .social-links a:hover {
-  color: #24262b;
-  background-color: #ffffff;
+  color: var(--fourth-white);
+  background-color: var(--secondery-black);
 }
 
 /*responsive*/

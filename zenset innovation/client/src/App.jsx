@@ -2,8 +2,7 @@ import { useState } from "react";
 import zenLogo from "/zen.svg";
 import "./App.css";
 import Home from "./screen/Home";
-import Service from "./screen/Service";
-import Footer from "./component/Footer";
+import FAQ from "./screen/FAQ";
 
 function App() {
   const [count, setCount] = useState(0);

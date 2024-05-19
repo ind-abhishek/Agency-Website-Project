@@ -15,8 +15,13 @@
 html,
 body {
   max-width: 100%;
-  overflow-x: hidden;
-  background-color: #26ff5c;
+  /* overflow-x: hidden;
+  overflow-y: visible; */
+  background-color: #000000;
+}
+
+.RootWrap {
+  padding: 0 10% 0 10%;
 }
 
 .screen {
@@ -25,7 +30,7 @@ body {
 }
 
 .pageContainer {
-  position: absolute;
+  /* position: absolute; */
   z-index: 999;
   left: 0;
   right: 0;
@@ -38,11 +43,12 @@ body {
   width: 48%;
 }
 .head {
+  font-size: 16px;
   color: var(--fifth-violet);
 }
 
 .titel {
-  font-size: 32px;
+  font-size: 28px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -50,6 +56,7 @@ body {
 .desc {
   color: var(--third-gray);
   font-weight: 500;
+  font-size: 14px;
 }
 
 .cardContain {

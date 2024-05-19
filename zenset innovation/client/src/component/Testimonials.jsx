@@ -3,16 +3,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 
-// import "swiper/css/pagination";
-// import "swiper/css/navigation";
-// import "swiper/css/scrollbar";
-
 import "../styles/Testimonials.css";
 
 import { Scrollbar } from "swiper/modules";
 
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import Footer from "../component/Footer";
+import Footer from "./Footer";
 function Testimonials() {
   return (
     <div className="pageContainer text-white screen mx-auto max-w-screen-xl  ">
@@ -81,8 +77,6 @@ function Testimonials() {
           </SwiperSlide>
         </Swiper>
       </div>
-
-      <Footer></Footer>
     </div>
   );
 }

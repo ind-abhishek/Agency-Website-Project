@@ -1,14 +1,15 @@
 /* Notice */
 .notice {
-  font-size: 14px;
+  font-size: 13px;
   z-index: 2;
   position: relative;
+  align-items: center;
 }
 
 .notbtn1 {
   padding-left: 25px;
   padding-right: 25px;
-  background-color: #1f1e26;
+  background-color: var(--secondery-black);
   border-radius: 25px;
 }
 

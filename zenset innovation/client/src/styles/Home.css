@@ -52,12 +52,13 @@
 #blur {
   width: 100%;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   backdrop-filter: blur(12vmax);
   overflow: hidden;
-}
+  padding: auto;
 
-.serviceWrapper {
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .bluri {
@@ -68,8 +69,10 @@
   filter: blur(12vmax);
   -webkit-filter: blur(12vmax);
   overflow: hidden;
-}
 
+  margin-top: 150px;
+  /* margin: 150px 0 150px 0; */
+}
 .blobi {
   background-color: white;
   height: 34vmax;
@@ -85,18 +88,20 @@
 }
 
 /* Home */
+
 .home {
   position: relative;
   display: grid;
+  margin-top: 25px;
 }
 .hero {
-  width: 70%;
+  max-width: 60%;
   z-index: 999;
 }
 
 .hero h1 {
   color: white;
-  font-size: 95px;
+  font-size: 75px;
   font-weight: 600;
   position: relative;
   z-index: 999;
@@ -117,8 +122,14 @@
   color: var(--primary-color);
 }
 .heroDetail {
-  width: 50%;
+  margin-top: 20px;
+  width: 40%;
   color: var(--third-gray);
+}
+
+.heroDetail p {
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .col-gray {

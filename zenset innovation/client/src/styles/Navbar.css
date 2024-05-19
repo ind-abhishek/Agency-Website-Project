@@ -5,7 +5,9 @@
 
 .zenlogo {
   height: auto;
-  width: 170px;
+  width: 160px;
+  margin: 10px 0px 10px 0;
+  padding: 5px 0px 5px 0px;
 }
 
 nav {
@@ -17,6 +19,7 @@ nav {
   padding-bottom: 0;
   z-index: 2;
   position: relative;
+  font-size: 15px;
 }
 
 nav ul li a {

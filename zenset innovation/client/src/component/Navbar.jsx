@@ -1,20 +1,17 @@
 import React from "react";
-import "../styles/Navbar.css";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { MdArrowOutward } from "react-icons/md";
+import "../styles/Navbar.css"; // Make sure this path is correct
 
 const Navbar = () => {
   return (
-    <>
-      <nav className="">
+    <BrowserRouter>
+      <nav className="navbar-container">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
           <div className="logoContain">
-            <a href="#" className="">
-              <img
-                src="/public/zenLogo.png"
-                className="zenlogo"
-                alt="Zenset Logo"
-              />
-            </a>
+            <Link to="/" className="logo-link">
+              <img src="/zenLogo.png" className="zenlogo" alt="Zenset Logo" />
+            </Link>
           </div>
 
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -24,6 +21,7 @@ const Navbar = () => {
             >
               Let's Talk <MdArrowOutward className="inline" />
             </button>
+
             <button
               data-collapse-toggle="navbar-cta"
               type="button"
@@ -53,45 +51,54 @@ const Navbar = () => {
             className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
             id="navbar-cta"
           >
-            <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
+            <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="../screen/Whyus.jsx"
                   className="block py-2 px-3 md:p-0 rounded md:bg-transparent"
                   aria-current="page"
                 >
                   Why Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="../screen/CaseStudy.jsx"
                   className="block py-2 px-3 md:p-0 rounded md:bg-transparent"
                 >
                   Case Studies
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   className="block py-2 px-3 md:p-0 rounded md:bg-transparent"
                 >
-                  Testmonials
-                </a>
+                  Testimonials
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="../screen/FAQ.jsx"
                   className="block py-2 px-3 md:p-0 rounded md:bg-transparent"
                 >
                   FAQ
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-    </>
+
+      {/* Define your Routes here */}
+      <Routes>
+        <Route path="../screen/Whyus" element={<WhyUs />} />
+        <Route path="../screen/CaseStudy.jsx" element={<CaseStudy />} />
+        <Route path="#" element={<Testimonials />} />
+        <Route path="../screen/FAQ.jsx" element={<FAQ />} />
+        {/* Add other routes as needed */}
+      </Routes>
+    </BrowserRouter>
   );
 };
 

@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="footer-col">
-            <img src="\public\zenLogo.png" alt="" />
+            <img src="\zenLogo.png" alt="" />
           </div>
 
           <div className="footer-col">

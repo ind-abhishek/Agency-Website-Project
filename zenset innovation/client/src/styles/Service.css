@@ -2,41 +2,41 @@
 
 .servCard {
   background-color: var(--card-bg);
-  padding: 20px;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  padding: 18px;
+  padding-top: 28px;
+  padding-bottom: 8px;
   border: 1px solid var(--third-gray);
   z-index: 5;
 }
 
 .servCard:hover {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   transition: 0.5s;
 }
 
 .servLogo {
   display: inline-block;
   background-color: var(--card-bg);
-  padding: 13px;
+  padding: 11px;
   color: var(--fifth-violet);
   font-size: 33px;
 }
 
 .servCardTitel {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 17px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 16px;
 }
 .servDetail {
   color: var(--third-gray);
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .servNext {
   display: inline-block;
-  padding: 20px;
-  margin-top: 30px;
+  padding: 18px;
+  margin-top: 28px;
   border: 1px solid var(--third-gray);
 }
 
