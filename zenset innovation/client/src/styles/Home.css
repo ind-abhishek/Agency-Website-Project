@@ -1,9 +1,32 @@
+.cursor {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid var(--fifth-violet);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 999999;
+  transition: all 0.2s ease-out;
+  animation: moveCursor1 0.5s infinite alternate;
+}
+
+@keyframes moveCursor1 {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0.8);
+  }
+}
+
 /* Home */
 
 .home {
   position: relative;
   display: grid;
-  margin-top: 40px;
+  margin-top: 100px;
 }
 .hero {
   max-width: 60%;
@@ -48,6 +71,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .cursor {
+    display: none;
+  }
+
   .hero {
     max-width: 100%;
   }

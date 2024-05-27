@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/Home.css";
 import { MdArrowOutward } from "react-icons/md";
 
@@ -25,8 +25,38 @@ import Testimonials from "../component/Testimonials";
 import FAQ from "../component/FAQ";
 
 const Home = () => {
+  useEffect(() => {
+    const cursor = document.querySelector(".cursor");
+
+    const handleMouseMove = (e) => {
+      cursor.setAttribute(
+        "style",
+        `top: ${e.pageY - 10}px; left: ${e.pageX - 10}px;`
+      );
+    };
+
+    const handleClick = () => {
+      cursor.classList.add("expand");
+      setTimeout(() => {
+        cursor.classList.remove("expand");
+      }, 500);
+    };
+
+    document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("click", handleClick);
+
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("click", handleClick);
+    };
+  }, []);
+
   return (
     <div className="RootWrap">
+      <div className="cursor">
+        <div className="expand"></div>
+      </div>
+
       {/* <Notice />
       <Navbar /> */}
 
@@ -210,12 +240,16 @@ const Home = () => {
             <div className="projectCard rounded-lg">
               <img
                 className="project-image"
-                src="https://cdn.dribbble.com/userupload/13217802/file/original-5d79d6d536841524fa97beb19de8ff48.png?crop=0x0-3201x2401&resize=400x300&vertical=center"
+                src="/bigmart.jpg"
                 alt="Project Image"
               />
               <div className="cardOverlay">
-                <div className="overlay-content ">
-                  <a href="#" className="inline">
+                <div className="overlay-content1 ">
+                  <a
+                    href="https://smbigmart.com/"
+                    target="blank"
+                    className="inline"
+                  >
                     See Project <FaArrowRight className="inline" />
                   </a>
                 </div>
@@ -225,12 +259,16 @@ const Home = () => {
             <div className="projectCard rounded-lg">
               <img
                 className="project-image"
-                src="https://cdn.dribbble.com/userupload/14206534/file/original-4f402b9e37ae4086980b884929632313.png?resize=400x300&vertical=center"
+                src="/TrendingCrafts.jpg"
                 alt="Project Image"
               />
               <div className="cardOverlay">
                 <div className="overlay-content">
-                  <a href="#" className="inline">
+                  <a
+                    href="https://craftifem.me/"
+                    target="blank"
+                    className="inline"
+                  >
                     See Project <FaArrowRight className="inline" />
                   </a>
                 </div>
@@ -240,12 +278,16 @@ const Home = () => {
             <div className="projectCard rounded-lg">
               <img
                 className="project-image"
-                src="https://cdn.dribbble.com/userupload/13124712/file/original-a61847733df53a582d567ade3e80200f.jpeg?crop=0x0-4800x3600&resize=400x300&vertical=center"
+                src="/HassanSchool.jpg"
                 alt="Project Image"
               />
               <div className="cardOverlay">
                 <div className="overlay-content">
-                  <a href="#" className="inline">
+                  <a
+                    href="https://hbiztech.com/"
+                    target="blank"
+                    className="inline"
+                  >
                     See Project <FaArrowRight className="inline" />
                   </a>
                 </div>
@@ -260,7 +302,7 @@ const Home = () => {
               />
               <div className="cardOverlay">
                 <div className="overlay-content">
-                  <a href="#" className="inline">
+                  <a href="#" target="blank" className="inline">
                     See Project <FaArrowRight className="inline" />
                   </a>
                 </div>
@@ -275,7 +317,7 @@ const Home = () => {
               />
               <div className="cardOverlay">
                 <div className="overlay-content">
-                  <a href="#" className="inline">
+                  <a href="#" target="blank" className="inline">
                     See Project <FaArrowRight className="inline" />
                   </a>
                 </div>

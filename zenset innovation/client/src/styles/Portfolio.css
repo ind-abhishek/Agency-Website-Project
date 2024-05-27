@@ -1,8 +1,5 @@
 /* Portfolio */
 
-.cardContain {
-}
-
 .portCard {
   padding: 0;
   width: fit-content;
@@ -45,16 +42,8 @@
   transition: transform 0.2s ease;
 }
 
-.projectCard:hover .cardOverlay {
-  opacity: 100;
-}
-
 .overlay-content {
   display: none;
-}
-
-.projectCard:hover .overlay-content {
-  display: block;
 }
 
 .overlay-content a {
@@ -66,4 +55,12 @@
   margin-top: 0;
   margin-bottom: 15px;
   transition: 0.5s;
+}
+
+.projectCard:hover .cardOverlay {
+  opacity: 100;
+}
+
+.projectCard:hover .overlay-content {
+  display: block;
 }
