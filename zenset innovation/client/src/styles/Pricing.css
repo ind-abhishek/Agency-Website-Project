@@ -58,3 +58,25 @@
   margin-bottom: 15px;
   transition: 0.5s;
 }
+
+@media only screen and (max-width: 600px) {
+  .priceTitel {
+    font-size: 16px;
+  }
+
+  .priceHead {
+    font-size: 32px;
+  }
+
+  .priceDesc {
+    font-size: 12px;
+  }
+
+  .priceDetail p {
+    font-size: 13px;
+  }
+
+  .priceIcon {
+    font-size: 18px;
+  }
+}

@@ -5,19 +5,23 @@
 :root {
   --primary-color: #5c45fd;
   --secondery-black: #161616;
+  --black-bg: #000000;
   --third-gray: #969799;
   --fourth-white: #f5f5f5;
   --fifth-violet: #a79bff;
+  --sixth-Lightviolet: #181622;
   --boder-gray: #202020;
   --card-bg: #36353b6f;
+  --nav-bg: #181622;
+  --red-col: #d11250;
 }
 
 html,
 body {
   max-width: 100%;
-  /* overflow-x: hidden;
-  overflow-y: visible; */
-  background-color: #000000;
+  overflow-x: hidden;
+
+  background-color: var(--black-bg);
 }
 
 .RootWrap {
@@ -30,7 +34,6 @@ body {
 }
 
 .pageContainer {
-  /* position: absolute; */
   z-index: 999;
   left: 0;
   right: 0;
@@ -41,22 +44,30 @@ body {
 
 .descContain {
   width: 48%;
+  z-index: 99;
+  position: relative;
 }
 .head {
   font-size: 16px;
   color: var(--fifth-violet);
+  z-index: 99;
+  position: relative;
 }
 
 .titel {
   font-size: 28px;
   margin-top: 5px;
   margin-bottom: 5px;
+  z-index: 999;
+  position: relative;
 }
 
 .desc {
   color: var(--third-gray);
   font-weight: 500;
   font-size: 14px;
+  z-index: 999;
+  position: relative;
 }
 
 .cardContain {
@@ -69,6 +80,8 @@ body {
   padding-top: 10px;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
+  z-index: 99;
+  position: relative;
 }
 
 .notbtn3 {
@@ -77,9 +90,37 @@ body {
   border: 1px solid var(--primary-color);
   z-index: 999;
   border-radius: 6px;
+  color: var(--fourth-white);
 }
 
 .notbtn3:hover {
   background: var(--primary-color);
   transition: 0.4s;
+}
+
+@media only screen and (max-width: 600px) {
+  .pageContainer {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .head {
+    font-size: 14px;
+  }
+
+  .titel {
+    font-size: 19px;
+  }
+
+  .descContain {
+    width: 70%;
+  }
+  .desc {
+    font-size: 10px;
+  }
+
+  .cardContain {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

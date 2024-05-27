@@ -17,6 +17,7 @@
   border: 3px solid var(--boder-gray);
   font-size: 70px;
   border-radius: 12px;
+  color: var(--fourth-white);
 }
 
 .brandLogo {
@@ -27,4 +28,20 @@
   background: var(--fourth-white);
   color: var(--primary-color);
   transition: 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+  .brandHead {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .brandCard {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .brandLogoContainer {
+    font-size: 40px;
+  }
 }

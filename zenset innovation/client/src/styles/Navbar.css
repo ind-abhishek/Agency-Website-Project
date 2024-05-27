@@ -1,8 +1,5 @@
 /* Navbar */
 
-.logoContain {
-}
-
 .zenlogo {
   height: auto;
   width: 160px;
@@ -17,9 +14,23 @@ nav {
   border-right: 0;
   padding-top: 0;
   padding-bottom: 0;
-  z-index: 2;
+  z-index: 99999;
   position: relative;
   font-size: 15px;
+  padding-right: 5px;
+  padding-left: 5px;
+
+  overflow: hidden;
+  /* background-color: #333; */
+
+  position: sticky;
+  top: 0;
+  width: 100%;
+  transition: background-color 0.5s ease-in-out;
+}
+
+nav.scrolled {
+  background-color: var(--nav-bg);
 }
 
 nav ul li a {
@@ -27,10 +38,23 @@ nav ul li a {
   font-weight: 500;
   padding: 0;
   margin: 0;
+  transition: background-color 0.6s ease-in-out;
+  white-space: nowrap;
+}
+
+nav.scrolled ul li a {
+  color: var(--fourth-white);
 }
 
 nav ul li a:hover {
+  transition: 0.1s ease-in-out;
   color: var(--fifth-violet);
+  cursor: pointer;
+}
+
+nav ul .nav-item.active a {
+  color: var(--fifth-violet);
+  cursor: pointer;
 }
 
 .letTalk {
@@ -41,4 +65,20 @@ nav ul li a:hover {
 .letTalk:hover {
   background-color: var(--fifth-violet);
   transition: 0.4s;
+}
+
+.dropDown {
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .zenlogo {
+    width: 120px;
+    margin-left: 6px;
+  }
+
+  .letTalk {
+    font-size: 11px;
+    /* padding: 3px 10px 3px 10px; */
+  }
 }

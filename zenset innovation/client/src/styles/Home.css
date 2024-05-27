@@ -1,98 +1,9 @@
-/* Glow */
-.bgGlow {
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-}
-
-.higlighter {
-  position: absolute;
-  padding: 70px;
-  z-index: 0;
-  height: 100%;
-  border-radius: 50%;
-  translate: -50% -50%;
-  border-radius: 50%;
-  background: linear-gradient(to right, rgba(105, 79, 211, 0.848), #543283cd);
-  animation: rotate 60s infinite;
-  opacity: 1;
-  left: 10%;
-  top: 70%;
-  overflow: hidden;
-}
-
-@keyframes rotate {
-  from {
-    rotate: 0deg;
-  }
-
-  50% {
-    scale: 1 1.5;
-  }
-
-  to {
-    rotate: 360deg;
-  }
-}
-
-#blob {
-  background-color: white;
-  height: 34vmax;
-  aspect-ratio: 1;
-  position: absolute;
-  top: 50%;
-  translate: -50% -50%;
-  border-radius: 50%;
-  background: linear-gradient(to right, rgb(105, 79, 211), #242044);
-  animation: rotate 20s infinite;
-  opacity: 0.5;
-  z-index: 1;
-}
-
-#blur {
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-  backdrop-filter: blur(12vmax);
-  overflow: hidden;
-  padding: auto;
-
-  padding-left: 60px;
-  padding-right: 60px;
-}
-
-.bluri {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  z-index: 1;
-  filter: blur(12vmax);
-  -webkit-filter: blur(12vmax);
-  overflow: hidden;
-
-  margin-top: 150px;
-  /* margin: 150px 0 150px 0; */
-}
-.blobi {
-  background-color: white;
-  height: 34vmax;
-  aspect-ratio: 1;
-  position: absolute;
-  top: 50%;
-  translate: -50% -50%;
-  border-radius: 50%;
-  background: linear-gradient(to right, rgb(105, 79, 211), #242044);
-  animation: rotate 20s infinite;
-  opacity: 0.5;
-  z-index: auto;
-}
-
 /* Home */
 
 .home {
   position: relative;
   display: grid;
-  margin-top: 25px;
+  margin-top: 40px;
 }
 .hero {
   max-width: 60%;
@@ -100,7 +11,7 @@
 }
 
 .hero h1 {
-  color: white;
+  color: var(--fourth-white);
   font-size: 75px;
   font-weight: 600;
   position: relative;
@@ -134,4 +45,45 @@
 
 .col-gray {
   color: var(--third-gray);
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    max-width: 100%;
+  }
+  .hero h1 {
+    color: var(--fourth-white);
+    font-size: 39px;
+    font-weight: 600;
+    width: 100%;
+  }
+
+  .heroDetail {
+    width: 100%;
+  }
+
+  .heroDetail p {
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  .notbtn3 {
+    font-size: 10px;
+    display: inline;
+    padding: 5px 10px 5px 10px;
+    white-space: nowrap;
+  }
+
+  .pplCard img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .pplCard h4 {
+    font-size: 14px;
+  }
+
+  .pplCard p {
+    font-size: 12px;
+  }
 }

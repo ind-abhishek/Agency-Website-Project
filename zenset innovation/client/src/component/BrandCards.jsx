@@ -42,7 +42,7 @@ const BrandCards = () => {
 
   return (
     <div className="text-white relative z-30">
-      <h3 className="text-center">Trusted by 30+ businesses</h3>
+      <h3 className="text-center brandHead">Trusted by 30+ businesses</h3>
 
       <Slider className="brandCard" {...settings}>
         <div className="brandLogoContainer">

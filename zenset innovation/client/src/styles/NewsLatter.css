@@ -1,0 +1,44 @@
+.newslatterContain {
+  display: flex;
+  color: white;
+  padding-bottom: 15px;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--fifth-violet);
+  margin-bottom: 50px;
+  /* background-color: rgb(32, 32, 47); */
+  text-align: center;
+  align-items: center;
+  margin-top: 16px;
+  width: 100%;
+}
+
+.newslatterContain .emailLogo {
+  font-size: 29px;
+  margin-right: 10px;
+  color: var(--primary-color);
+}
+.newslatterContain input {
+  width: 100%;
+  background: transparent;
+  color: var(--fourth-white);
+  border: 0;
+  outline: none;
+  font-size: 12px;
+  /* margin: 5px 0 50x 0; */
+  font-weight: 500;
+}
+.newslatterContain button .arrowLogo {
+  font-size: 25px;
+  color: black;
+  background: white;
+  padding: 3px;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s ease;
+}
+
+.newslatterContain button .arrowLogo:hover {
+  color: var(--fourth-white);
+  background-color: var(--secondery-black);
+}

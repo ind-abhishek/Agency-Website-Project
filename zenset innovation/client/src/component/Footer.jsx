@@ -1,63 +1,68 @@
 import React from "react";
 import "../styles/Footer.css";
-
-import { AiFillInstagram } from "react-icons/ai";
-import { FaTwitter } from "react-icons/fa6";
-import { FaFacebook } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="container">
-        <div className="row">
-          <div className="footer-col">
-            <img src="\zenLogo.png" alt="" />
-          </div>
-
-          <div className="footer-col">
-            <h4>Lers connect</h4>
-            <ul>
-              <li>
-                <a href="#">4517 Washington Ave. Manchester, Kentucky 39495</a>
-              </li>
-              <li>
-                <a href="#">zenset.ino@gmail.com</a>
-              </li>
-              <li>
-                <a href="#">+91 9891075410</a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="footer-col">
-            <h4>Links</h4>
-            <ul>
-              <li>
-                <a href="#">Testimonials</a>
-              </li>
-              <li>
-                <a href="#">pricing</a>
-              </li>
-              <li>
-                <a href="#">Why Us</a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="footer-col">
-            <h4>follow us</h4>
-            <div className="social-links">
-              <a href="#">
-                <AiFillInstagram />
-              </a>
-              <a href="#">
-                <FaTwitter />
-              </a>
-              <a href="#">
-                <FaFacebook />
-              </a>
-            </div>
-          </div>
+      <div className="footer-column">
+        <img src="/zenLogo.png" alt="Brand Logo" className="footer-logo" />
+      </div>
+      <div className="footer-column">
+        <h3>Office Address</h3>
+        <p>1234 Street Name</p>
+        <p>City, State, Zip</p>
+        <p>Country</p>
+      </div>
+      <div className="footer-column">
+        <h3>Links</h3>
+        <ul>
+          <li>
+            <a href="/about">About Us</a>
+          </li>
+          <li>
+            <a href="/services">Services</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+          <li>
+            <a href="/privacy">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+      <div className="footer-column">
+        <h3>Navigation</h3>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="/blog">Blog</a>
+          </li>
+          <li>
+            <a href="/careers">Careers</a>
+          </li>
+        </ul>
+      </div>
+      <div className="footer-column">
+        <h3>Follow Us</h3>
+        <div className="social-links">
+          <a href="#">
+            <FaFacebook />
+          </a>
+          <a href="#">
+            <FaTwitter />
+          </a>
+          <a href="#">
+            <FaInstagram />
+          </a>
+          <a href="#">
+            <FaLinkedin />
+          </a>
         </div>
       </div>
     </footer>

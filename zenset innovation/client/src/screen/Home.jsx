@@ -22,14 +22,15 @@ import "../styles/Pricing.css";
 import { IoCheckmarkDoneCircleSharp } from "react-icons/io5";
 import Footer from "../component/Footer";
 import Testimonials from "../component/Testimonials";
+import FAQ from "../component/FAQ";
 
 const Home = () => {
   return (
     <div className="RootWrap">
-      <Notice />
-      <Navbar />
+      {/* <Notice />
+      <Navbar /> */}
 
-      <div className="homeWrapper">
+      <div className="homeWrapper" id="Hero">
         <div className="mainContainer">
           <BgLine className="opacity-10"></BgLine>
           <div className="home screen mx-auto max-w-screen-xl items-center px-50">
@@ -53,7 +54,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="mt-12 flex justify-start">
+            <div className="mt-12 flex justify-start ">
               <button className="mr-12 rounded-md p-0 mt-6 h-12  notbtn3 text-white">
                 <a href="#">
                   view work <MdArrowOutward className="inline" />
@@ -73,8 +74,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="serviceWrapper">
+      <div className="serviceWrapper" id="Service">
         <div className="pageContainer text-white screen mx-auto max-w-screen-xl  ">
+          <BgLine className="opacity-10"></BgLine>
           <h3 className="head tracking-[.35em]">SERVICE</h3>
           <h1 className="titel">Exceeding Expectations</h1>
           <div className="descContain">
@@ -189,8 +191,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="portfolioWrapper">
+      <div className="portfolioWrapper" id="Portfolio">
         <div className="pageContainer text-white screen mx-auto max-w-screen-xl  ">
+          <BgLine className="opacity-10"></BgLine>
           <h3 className="head tracking-[.35em]">PORTFOLIO</h3>
           <h1 className="titel">Our Latest Work</h1>
           <div className="descContain">
@@ -297,8 +300,10 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="pricingWrapper">
+      <div className="pricingWrapper" id="Pricing">
         <div className="pageContainer text-white screen mx-auto max-w-screen-xl  ">
+          <BgLine className="opacity-10"></BgLine>
+          <BgLine className="opacity-10"></BgLine>
           <h3 className="head tracking-[.35em]">PRICING</h3>
           <h1 className="titel">One fixed price to get your project done</h1>
           <div className="descContain">
@@ -438,8 +443,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="testimonialsWrapper">
-        <Testimonials></Testimonials>
+      <div className="Faq-ReviewWrapper" id="FAQ">
+        {/* <Testimonials></Testimonials> */}
+        <FAQ></FAQ>
       </div>
 
       <Footer></Footer>

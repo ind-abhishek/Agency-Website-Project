@@ -1,0 +1,144 @@
+.title {
+  color: #fff;
+  font-size: 5.5vw;
+  font-weight: 500;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  letter-spacing: 8px;
+  z-index: 1;
+  position: relative;
+}
+
+.title span:nth-child(6) {
+  margin-right: 30px;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 13px;
+  margin: 0 auto;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+  display: block;
+  z-index: 1;
+  position: relative;
+  width: 70%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+ul.countdown {
+  margin-top: 40px;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+ul.countdown li {
+  display: inline-block;
+  margin-right: 3%;
+  text-align: center;
+}
+
+ul.countdown li span {
+  font-size: 5.2vw;
+  letter-spacing: 5px;
+  font-weight: 300;
+  color: var(--fourth-white);
+}
+
+ul.countdown li:last-child {
+  margin-right: 0;
+}
+
+.countdown li p {
+  background-color: var(--primary-color);
+  padding: 5px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 4px;
+}
+
+form {
+  text-align: center;
+  width: 100%;
+  margin-top: 60px;
+  z-index: 1;
+  position: relative;
+}
+
+form input[type="email"] {
+  width: 21%;
+  padding: 16px;
+  font-size: 0.85em;
+  color: var(--fourth-white);
+  outline: none;
+  font-weight: 600;
+  background: none;
+  border: 1px solid var(--fourth-white);
+  transition: border-color 0.5s;
+  border-radius: 4px;
+  transition: 0.2s ease-in-out;
+}
+
+form input[type="email"]:focus {
+  background: var(--sixth-Lightviolet);
+}
+
+form input[type="submit"] {
+  border: 1px solid var(--red-col);
+  padding: 16px 16px;
+  font-size: 0.85em;
+  transition: 0.5s all;
+  background: none;
+  color: var(--red-col);
+  outline: none;
+  cursor: pointer;
+  margin-left: 15px;
+  border-radius: 4px;
+}
+
+form input[type="submit"]:hover {
+  border: 1px solid var(--fifth-violet);
+  color: var(--fifth-violet);
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 26px;
+    letter-spacing: 5px;
+    margin-top: 16px;
+    font-weight: 600;
+  }
+
+  .subtitle {
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: 15px;
+  }
+
+  .countdown li p {
+    margin-top: 10px;
+  }
+
+  ul.countdown li span {
+    font-weight: 400;
+  }
+
+  form input[type="email"] {
+    width: 60%;
+  }
+
+  form input[type="submit"] {
+    width: 35%;
+  }
+}

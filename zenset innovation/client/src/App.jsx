@@ -1,16 +1,19 @@
-import { useState } from "react";
-import zenLogo from "/zen.svg";
-import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./screen/Home";
-import FAQ from "./screen/FAQ";
+import Navbar from "./component/Navbar";
+import "./App.css";
+import Soon from "./screen/Soon";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <Home></Home>
-    </>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Soon />} /> */}
+        {/* Add other routes as needed */}
+      </Routes>
+    </Router>
   );
 }
 

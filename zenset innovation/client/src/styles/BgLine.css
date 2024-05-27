@@ -1,6 +1,6 @@
 .bgLine {
   position: absolute;
-  z-index: 3;
+  z-index: 0;
   /* background-color: rgb(130, 154, 130); */
   border: 1px solid var(--boder-gray);
   border-top: none;

@@ -7,6 +7,8 @@
   padding-bottom: 8px;
   border: 1px solid var(--third-gray);
   z-index: 5;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .servCard:hover {
@@ -44,4 +46,22 @@
   background-color: var(--fourth-white);
   color: var(--secondery-black);
   transition: 0.6s;
+}
+
+@media only screen and (max-width: 600px) {
+  .servLogo {
+    padding: 10px;
+    font-size: 30px;
+  }
+
+  .servCardTitel {
+    font-size: 15px;
+  }
+  .servDetail {
+    font-size: 12px;
+  }
+
+  .servNext {
+    padding: 15px;
+  }
 }
