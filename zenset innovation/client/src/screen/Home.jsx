@@ -23,6 +23,7 @@ import { IoCheckmarkDoneCircleSharp } from "react-icons/io5";
 import Footer from "../component/Footer";
 import Testimonials from "../component/Testimonials";
 import FAQ from "../component/FAQ";
+import EmailForm from "../component/EmailForm";
 
 const Home = () => {
   useEffect(() => {
@@ -358,7 +359,7 @@ const Home = () => {
 
             <div className="priceCard rounded-lg mt-5 ">
               <h1 className="priceTitel">Basic</h1>
-              <h3 className="priceHead">$445</h3>
+              <h3 className="priceHead"> ₹6,999</h3>
               <p className="priceDesc">
                 Fully responsive I page website, developed in Webflow, Unlimited
                 Sections.
@@ -366,30 +367,74 @@ const Home = () => {
               <div className="priceDetail">
                 <p>
                   {" "}
-                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
-                  Functional website
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />5
+                  pages Website
                 </p>
                 <p>
-                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
-                  Responsive design
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />1
+                  Year Free Domain Name ( .com .in .org )
                 </p>
                 <p>
-                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
-                  content upload
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />1
+                  Year Free Hosting ( Unlimited Space )
                 </p>
 
                 <p>
-                  {" "}
                   <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
-                  Functional website
+                  Admin Access
                 </p>
                 <p>
                   <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
-                  Responsive design
+                  Lifetime 24/7 Free Hosting Support
                 </p>
                 <p>
                   <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
-                  content upload
+                  Unlimited Images & Videos Upload
+                </p>
+
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />5
+                  Free Email Id
+                </p>
+
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
+                  SEO Friendly Website
+                </p>
+
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
+                  100% Responsive Website
+                </p>
+
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
+                  Live Chat Integration
+                </p>
+
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
+                  Payment Gateway Integration
+                </p>
+
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
+                  Call Button Integration
+                </p>
+
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
+                  Inquiry Form
+                </p>
+
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />1
+                  Year Free Technical Support For Website
+                </p>
+
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
+                  Annual Renewal For Hosting Rs.3000.
                 </p>
               </div>
 
@@ -400,38 +445,81 @@ const Home = () => {
 
             <div className="priceCard rounded-lg mt-5 ">
               <h1 className="priceTitel">Standard</h1>
-              <h3 className="priceHead">$645</h3>
+              <h3 className="priceHead"> ₹11,999</h3>
               <p className="priceDesc">
-                Fully responsive 3 page website, developed in webflow. unlimited
-                sections.
+                Fully responsive I page website, developed in Webflow, Unlimited
+                Sections.
               </p>
               <div className="priceDetail">
                 <p>
-                  {" "}
                   <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
-                  Functional website
+                  12 pages Website
                 </p>
                 <p>
                   <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
-                  Responsive design
-                </p>
-                <p>
-                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
-                  content upload
+                  Woocommece Features
                 </p>
 
                 <p>
-                  {" "}
                   <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
-                  Functional website
+                  10 Free Email Id
+                </p>
+
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />1
+                  Year Free Domain Name ( .com .in .org )
+                </p>
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />1
+                  Year Free Hosting ( Unlimited Space )
                 </p>
                 <p>
                   <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
-                  Responsive design
+                  Admin Access
                 </p>
                 <p>
                   <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
-                  content upload
+                  Lifetime 24/7 Free Hosting Support
+                </p>
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
+                  Unlimited Images & Videos Upload
+                </p>
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />5
+                  Free Email Id
+                </p>
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
+                  SEO Friendly Website
+                </p>
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
+                  100% Responsive Website
+                </p>
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
+                  Live Chat Integration
+                </p>
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
+                  Payment Gateway Integration
+                </p>
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
+                  Call Button Integration
+                </p>
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
+                  Inquiry Form
+                </p>
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />1
+                  Year Free Technical Support For Website
+                </p>
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
+                  Annual Renewal For Hosting Rs.3000.
                 </p>
               </div>
 
@@ -441,39 +529,82 @@ const Home = () => {
             </div>
 
             <div className="priceCard rounded-lg mt-5 ">
-              <h1 className="priceTitel">premium</h1>
-              <h3 className="priceHead">$945</h3>
+              <h1 className="priceTitel">Custom Plan</h1>
+              <h3 className="priceHead"> ₹???</h3>
               <p className="priceDesc">
-                Fully responsive 1O page website, developed in Webflow.
-                Unlimited Sections.
+                Fully responsive I page website, developed in Webflow, Unlimited
+                Sections.
               </p>
               <div className="priceDetail">
                 <p>
-                  {" "}
                   <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
-                  Functional website
+                  Pages: According to Requirement
                 </p>
                 <p>
                   <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
-                  Responsive design
-                </p>
-                <p>
-                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
-                  content upload
+                  Woocommece Features
                 </p>
 
                 <p>
-                  {" "}
                   <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
-                  Functional website
+                  10 Free Email Id
+                </p>
+
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />1
+                  Year Free Domain Name ( .com .in .org )
+                </p>
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />1
+                  Year Free Hosting ( Unlimited Space )
                 </p>
                 <p>
                   <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
-                  Responsive design
+                  Admin Access
                 </p>
                 <p>
                   <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
-                  content upload
+                  Lifetime 24/7 Free Hosting Support
+                </p>
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
+                  Unlimited Images & Videos Upload
+                </p>
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />5
+                  Free Email Id
+                </p>
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
+                  SEO Friendly Website
+                </p>
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
+                  100% Responsive Website
+                </p>
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
+                  Live Chat Integration
+                </p>
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
+                  Payment Gateway Integration
+                </p>
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
+                  Call Button Integration
+                </p>
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
+                  Inquiry Form
+                </p>
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />1
+                  Year Free Technical Support For Website
+                </p>
+                <p>
+                  <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
+                  Annual Renewal For Hosting Rs.4000.
                 </p>
               </div>
 
@@ -487,6 +618,7 @@ const Home = () => {
 
       <div className="Faq-ReviewWrapper" id="FAQ">
         {/* <Testimonials></Testimonials> */}
+        <EmailForm></EmailForm>
         <FAQ></FAQ>
       </div>
 

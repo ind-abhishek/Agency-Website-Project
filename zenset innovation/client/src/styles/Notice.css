@@ -4,6 +4,7 @@
   z-index: 2;
   position: relative;
   align-items: center;
+  margin-top: 70px;
 }
 
 .notbtn1 {
@@ -21,5 +22,28 @@
 
 .notbtn2:hover {
   background: var(--primary-color);
-  transition: 0.4s;
+  transition: ease-in-out 0.4s;
+}
+
+@media only screen and (max-width: 600px) {
+  .notice {
+    font-size: 8px;
+    font-weight: 400;
+  }
+
+  .close-btn {
+    margin-left: 0px;
+    font-size: 20px;
+  }
+
+  .notbtn1 {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .notbtn2 {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }

@@ -7,6 +7,7 @@ import "../styles/Navbar.css";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("Hero");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,9 +38,18 @@ const Navbar = () => {
     };
   }, []);
 
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+    if (!menuOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  };
+
   return (
-    <nav className="navbar-container">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
+    <nav className={`navbar-container ${menuOpen ? "fullscreen" : ""}`}>
+      <div className="NavItemsContainer max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
         <div className="logoContain">
           <Link
             to="Hero"
@@ -52,6 +62,7 @@ const Navbar = () => {
             <img src="/zenLogo.png" className="zenlogo" alt="Zenset Logo" />
           </Link>
         </div>
+
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button
             type="button"
@@ -60,20 +71,25 @@ const Navbar = () => {
             Let's Talk <MdArrowOutward className="inline" />
           </button>
           <button
-            data-collapse-toggle="navbar-cta"
+            onClick={toggleMenu}
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className=" inline-flex items-center p-2 w-9 h-9 justify-center text-sm text-black-500 rounded-lg md:hidden hover:bg-black-100 focus:outline-none focus:ring-2 dark:text-gray-100
+            dark:focus:ring-indigo-700"
             aria-controls="navbar-cta"
-            aria-expanded="false"
+            aria-expanded={menuOpen}
           >
             <RxHamburgerMenu className="dropDown" />
           </button>
         </div>
+
+        {/* Item */}
         <div
-          className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          className={`items-center justify-center ${
+            menuOpen ? "block" : "hidden"
+          } w-full md:flex md:w-auto md:order-1`}
           id="navbar-cta"
         >
-          <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
+          <ul className="NavItemContainer flex flex-col items-center justify-center font-medium p-4 md:p-0 mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
             <li className={`nav-item ${activeLink === "Hero" ? "active" : ""}`}>
               <Link
                 to="Hero"
@@ -81,12 +97,12 @@ const Navbar = () => {
                 smooth={true}
                 offset={-100}
                 duration={500}
-                className="block py-2 px-3 md:p-0 rounded md:bg-transparent"
+                className="block py-2 px-3 md:p-0 rounded md:bg-transparent text-xs	"
+                onClick={() => setMenuOpen(false)}
               >
                 Home
               </Link>
             </li>
-
             <li
               className={`nav-item ${activeLink === "Service" ? "active" : ""}`}
             >
@@ -97,11 +113,11 @@ const Navbar = () => {
                 offset={-100}
                 duration={500}
                 className="block py-2 px-3 md:p-0 rounded md:bg-transparent"
+                onClick={() => setMenuOpen(false)}
               >
                 Service
               </Link>
             </li>
-
             <li
               className={`nav-item ${
                 activeLink === "Portfolio" ? "active" : ""
@@ -114,11 +130,11 @@ const Navbar = () => {
                 offset={-100}
                 duration={500}
                 className="block py-2 px-3 md:p-0 rounded md:bg-transparent"
+                onClick={() => setMenuOpen(false)}
               >
                 Portfolio
               </Link>
             </li>
-
             <li
               className={`nav-item ${activeLink === "Pricing" ? "active" : ""}`}
             >
@@ -129,11 +145,11 @@ const Navbar = () => {
                 offset={-100}
                 duration={500}
                 className="block py-2 px-3 md:p-0 rounded md:bg-transparent"
+                onClick={() => setMenuOpen(false)}
               >
                 Pricing
               </Link>
             </li>
-
             <li className={`nav-item ${activeLink === "faq" ? "active" : ""}`}>
               <Link
                 to="FAQ"
@@ -142,6 +158,7 @@ const Navbar = () => {
                 offset={-100}
                 duration={500}
                 className="block py-2 px-3 md:p-0 rounded md:bg-transparent"
+                onClick={() => setMenuOpen(false)}
               >
                 FAQ
               </Link>

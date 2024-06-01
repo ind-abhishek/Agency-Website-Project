@@ -71,14 +71,57 @@ nav ul .nav-item.active a {
   font-size: 25px;
 }
 
+.fullscreen {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--nav-bg);
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.fullscreen ul {
+  flex-direction: column;
+  align-items: center;
+  float: left;
+}
+
+.fullscreen ul li {
+  margin: 0;
+}
+
+.fullscreen ul li a {
+  color: white;
+  font-size: 18px;
+}
+
 @media only screen and (max-width: 600px) {
   .zenlogo {
-    width: 120px;
+    width: 130px;
     margin-left: 6px;
   }
 
   .letTalk {
     font-size: 11px;
-    /* padding: 3px 10px 3px 10px; */
   }
+
+  .fullscreen ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.2rem;
+    padding-left: 124px;
+  }
+
+  .fullscreen ul li {
+    margin-top: 10px;
+  }
+}
+
+body.no-scroll {
+  overflow: hidden;
 }

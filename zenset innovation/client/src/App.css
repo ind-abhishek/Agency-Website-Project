@@ -20,6 +20,7 @@ html,
 body {
   max-width: 100%;
   overflow-x: hidden;
+  /* overflow: hidden; */
 
   background-color: var(--black-bg);
 }
@@ -99,13 +100,17 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  .RootWrap {
+    padding: 0 7% 0 7%;
+  }
+
   .pageContainer {
     margin-left: 10px;
     margin-right: 10px;
   }
 
   .head {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .titel {
@@ -113,10 +118,10 @@ body {
   }
 
   .descContain {
-    width: 70%;
+    width: 74%;
   }
   .desc {
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .cardContain {

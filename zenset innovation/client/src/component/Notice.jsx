@@ -10,8 +10,8 @@ const Notice = () => {
       <button className="mr-12 rounded-md p-2 notbtn2">
         <a href="#">Get it now!!</a>
       </button>
-      <div className="p-2 ml-20 ">
-        <MdOutlineCancel className="text-2xl" />
+      <div className="p-2  ">
+        <MdOutlineCancel className="text-2xl ml-20 close-btn" />
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import "../styles/Footer.css";
 import React, { useEffect, useState } from "react";
 import { Link, Events, scrollSpy } from "react-scroll";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { Link as RouterLink } from "react-router-dom"; // Import Link from react-router-dom
 
 const Footer = () => {
   const [activeLink, setActiveLink] = useState("Hero");
@@ -61,59 +62,44 @@ const Footer = () => {
               Home
             </Link>
           </li>
+          {/* Modify the links to use RouterLink */}
           <li
             className={`nav-item ${activeLink === "Service" ? "active" : ""}`}
           >
-            <Link
-              to="Service"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
+            <RouterLink
+              to="/service"
               className="block py-2 px-3 md:p-0 rounded md:bg-transparent"
             >
               Service
-            </Link>
+            </RouterLink>
           </li>
           <li
             className={`nav-item ${activeLink === "Portfolio" ? "active" : ""}`}
           >
-            <Link
-              to="Portfolio"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
+            <RouterLink
+              to="/portfolio"
               className="block py-2 px-3 md:p-0 rounded md:bg-transparent"
             >
               Portfolio
-            </Link>
+            </RouterLink>
           </li>
           <li
             className={`nav-item ${activeLink === "Pricing" ? "active" : ""}`}
           >
-            <Link
-              to="Pricing"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
+            <RouterLink
+              to="/pricing"
               className="block py-2 px-3 md:p-0 rounded md:bg-transparent"
             >
               Pricing
-            </Link>
+            </RouterLink>
           </li>
           <li className={`nav-item ${activeLink === "FAQ" ? "active" : ""}`}>
-            <Link
-              to="FAQ"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
+            <RouterLink
+              to="/faq"
               className="block py-2 px-3 md:p-0 rounded md:bg-transparent"
             >
               FAQ
-            </Link>
+            </RouterLink>
           </li>
         </ul>
       </div>
@@ -121,26 +107,32 @@ const Footer = () => {
         <h3>Links</h3>
         <ul>
           <li>
-            <a href="/blog">Blog</a>
+            <RouterLink to="/blog">Blog</RouterLink>
           </li>
           <li>
-            <a href="/careers">Careers</a>
+            <RouterLink to="/careers">Careers</RouterLink>
+          </li>
+          <li>
+            <RouterLink to="/refund">Refund & Cancellation</RouterLink>
           </li>
         </ul>
       </div>
       <div className="footer-column">
         <h3>Follow Us</h3>
         <div className="social-links">
-          <a href="www.goggle.com">
+          <a href="https://www.facebook.com/cyberzet.solutions" target="blank">
             <FaFacebook />
           </a>
-          <a href="#">
+          <a href="https://x.com/CyberzetDigital" target="blank">
             <FaTwitter />
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/cyberzet.solutions" target="blank">
             <FaInstagram />
           </a>
-          <a href="#">
+          <a
+            href="https://www.linkedin.com/company/cyberzet-solutions"
+            target="blank"
+          >
             <FaLinkedin />
           </a>
         </div>

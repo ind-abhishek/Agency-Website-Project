@@ -11,9 +11,9 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "What services does Zensperk offer?",
+      question: "What services does CyberZet offer?",
       answer:
-        "Zensperk provides comprehensive web development services, including custom website design, e-commerce solutions, SEO optimization, and digital marketing strategies. We also offer website maintenance and support.",
+        "CyberZet provides comprehensive web development services, including custom website design, e-commerce solutions, SEO optimization, and digital marketing strategies. We also offer website maintenance and support.",
     },
     {
       question: "How much does it cost to develop a website?",
@@ -31,7 +31,7 @@ const FAQ = () => {
         "Yes, all our websites are designed to be fully responsive, ensuring they look and function perfectly on all devices, including smartphones and tablets.",
     },
     {
-      question: "How do I get started with Zensperk?",
+      question: "How do I get started with CyberZet?",
       answer:
         "Getting started is easy! Contact us through our website or give us a call to schedule a free consultation. We'll discuss your project, goals, and how we can help bring your vision to life.",
     },

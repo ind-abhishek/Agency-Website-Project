@@ -28,3 +28,23 @@
 .bgLine5 {
   right: 2400px;
 }
+
+@media only screen and (max-width: 600px) {
+  .bgLine1 {
+    right: 10px;
+  }
+  .bgLine2 {
+    right: 110px;
+  }
+
+  .bgLine3 {
+    right: 210px;
+  }
+
+  .bgLine4 {
+    right: 310px;
+  }
+  .bgLine5 {
+    right: 410px;
+  }
+}
