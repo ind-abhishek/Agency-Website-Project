@@ -346,7 +346,7 @@ const Home = () => {
       <div className="pricingWrapper" id="Pricing">
         <div className="pageContainer text-white screen mx-auto max-w-screen-xl  ">
           <BgLine className="opacity-10"></BgLine>
-          <BgLine className="opacity-10"></BgLine>
+
           <h3 className="head tracking-[.35em]">PRICING</h3>
           <h1 className="titel">One fixed price to get your project done</h1>
           <div className="descContain">
@@ -616,9 +616,14 @@ const Home = () => {
         </div>
       </div>
 
+      <div id="Contact">
+        <BgLine className="opacity-10"></BgLine>
+        <EmailForm></EmailForm>
+      </div>
+
       <div className="Faq-ReviewWrapper" id="FAQ">
         {/* <Testimonials></Testimonials> */}
-        <EmailForm></EmailForm>
+
         <FAQ></FAQ>
       </div>
 

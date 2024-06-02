@@ -150,6 +150,21 @@ const Navbar = () => {
                 Pricing
               </Link>
             </li>
+
+            <li className={`nav-item ${activeLink === "faq" ? "active" : ""}`}>
+              <Link
+                to="Contact"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                className="block py-2 px-3 md:p-0 rounded md:bg-transparent"
+                onClick={() => setMenuOpen(false)}
+              >
+                Contact
+              </Link>
+            </li>
+
             <li className={`nav-item ${activeLink === "faq" ? "active" : ""}`}>
               <Link
                 to="FAQ"

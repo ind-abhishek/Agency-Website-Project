@@ -76,7 +76,7 @@ form {
   position: relative;
 }
 
-form input[type="email"] {
+.SoonEmail {
   width: 21%;
   padding: 16px;
   font-size: 0.85em;
@@ -90,11 +90,11 @@ form input[type="email"] {
   transition: 0.2s ease-in-out;
 }
 
-form input[type="email"]:focus {
+.SoonEmail:focus {
   background: var(--sixth-Lightviolet);
 }
 
-form input[type="submit"] {
+.SoonSubmit {
   border: 1px solid var(--red-col);
   padding: 16px 16px;
   font-size: 0.85em;
@@ -134,11 +134,11 @@ form input[type="submit"]:hover {
     font-weight: 400;
   }
 
-  form input[type="email"] {
+  .SoonEmail {
     width: 60%;
   }
 
-  form input[type="submit"] {
+  .SoonSubmit {
     width: 35%;
   }
 }

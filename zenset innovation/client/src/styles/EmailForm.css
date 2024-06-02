@@ -1,16 +1,122 @@
-.App {
+.Emailcontainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  padding: 1%;
 }
 
-.emailForm {
-  display: flex;
-  flex-direction: column;
+.Emailcontainer:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url("/TrendingCrafts.jpg") no-repeat center;
+  background-size: cover;
+  filter: blur(50px);
+  z-index: -1;
+  align-items: center;
+}
+.Emailcontact-box {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--card-bg);
+  border: 1px solid var(--third-gray);
+  border-radius: 10px;
+  gap: 10px;
 }
 
-input,
-textarea {
-  margin: 10px 0px;
+.left {
+  background: url("./HassanSchool.jpg") no-repeat center;
+  background-size: cover;
+  height: 100%;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.Emailright {
+  padding: 10px;
+}
+
+.Emailright h2 {
+  position: relative;
+  padding: 0 0 10px;
+  margin-bottom: 10px;
+  color: var(--fourth-white);
+}
+
+.Emailright h2:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: var(--primary-color);
+}
+
+.EmailField::placeholder {
+  color: var(--fourth-white);
+  font-size: 15px;
+}
+
+.emailForm input,
+.emailForm textarea {
+  color: var(--fourth-white);
+  font-size: 1rem;
+}
+
+.EmailField {
+  width: 100%;
+  border: 1px solid var(--third-gray);
+  outline: none;
+  background-color: var(--sixth-Lightviolet);
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: 0.3s;
+}
+
+.EmailField:hover {
+  background-color: var(--boder-gray);
+}
+
+.emailForm textarea {
+  min-height: 150px;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: var(--fourth-white);
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.btn:hover {
+  background-color: var(--fifth-violet);
+  transition: 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 880px) {
+  .Emailcontact-box {
+    grid-template-columns: 1fr;
+  }
+  .left {
+    height: 200px;
+  }
 }

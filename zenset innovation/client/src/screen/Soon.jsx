@@ -71,8 +71,12 @@ function Soon() {
         </li>
       </ul>
       <form>
-        <input type="email" placeholder="Enter your email" />
-        <input type="submit" value="Get Notified" />
+        <input
+          type="email"
+          className="SoonEmail"
+          placeholder="Enter your email"
+        />
+        <input type="submit" className="SoonSubmit" value="Get Notified" />
       </form>
 
       <div className="social-links">

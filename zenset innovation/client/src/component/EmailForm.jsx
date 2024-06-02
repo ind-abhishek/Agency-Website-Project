@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import "../styles/EmailForm.css";
+
 const EmailForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
@@ -18,6 +20,7 @@ const EmailForm = () => {
     const templateParams = {
       from_name: name,
       from_email: email,
+      from_phone: phone,
       to_name: "Web Wizard",
       message: message,
     };
@@ -29,6 +32,7 @@ const EmailForm = () => {
         console.log("Email sent successfully!", response);
         setName("");
         setEmail("");
+        setPhone("");
         setMessage("");
       })
       .catch((error) => {
@@ -37,27 +41,48 @@ const EmailForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="emailForm">
-      <input
-        type="text"
-        placeholder="Your Name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <input
-        type="email"
-        placeholder="Your Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <textarea
-        cols="30"
-        rows="10"
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-      ></textarea>
-      <button type="submit">Send Email</button>
-    </form>
+    <div className="Emailcontainer">
+      <div className="Emailcontact-box">
+        <div className="left">
+          {/* <img src="/TrendingCrafts.jpg" alt="" /> */}
+        </div>
+        <div className="Emailright">
+          <h2>Provide your details below</h2>
+          <form onSubmit={handleSubmit} className="emailForm">
+            <input
+              type="text"
+              className="EmailField"
+              placeholder="Your Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <input
+              type="email"
+              className="EmailField"
+              placeholder="Your Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <input
+              type="text"
+              className="EmailField"
+              placeholder="Phone"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+            />
+            <textarea
+              placeholder="Message"
+              className="EmailField"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            ></textarea>
+            <button type="submit" className="btn">
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
   );
 };
 
