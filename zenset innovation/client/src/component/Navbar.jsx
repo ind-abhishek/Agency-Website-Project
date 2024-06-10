@@ -59,7 +59,7 @@ const Navbar = () => {
             duration={500}
             className="logo-link"
           >
-            <img src="/zenLogo.png" className="zenlogo" alt="Zenset Logo" />
+            <img src="/cyberZet.png" className="cyberzet" alt="Cyberzet-Logo" />
           </Link>
         </div>
 

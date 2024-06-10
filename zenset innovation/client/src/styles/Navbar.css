@@ -1,6 +1,6 @@
 /* Navbar */
 
-.zenlogo {
+.cyberzet {
   height: auto;
   width: 160px;
   margin: 10px 0px 10px 0;
@@ -101,7 +101,7 @@ nav ul .nav-item.active a {
 }
 
 @media only screen and (max-width: 600px) {
-  .zenlogo {
+  .cyberzet {
     width: 130px;
     margin-left: 6px;
   }

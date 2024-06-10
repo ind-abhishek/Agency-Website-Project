@@ -1,0 +1,35 @@
+.refundContainer {
+  color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.refundTitel {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 999;
+  color: var(--fifth-violet);
+}
+
+.refundDesc {
+  font-size: 15px;
+  width: 90%;
+}
+
+.texthead h3 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.refundDecsContentent {
+  position: relative;
+  z-index: 999;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: var(--third-gray);
+  font-size: 14px;
+}

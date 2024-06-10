@@ -43,8 +43,8 @@ const EmailForm = () => {
   return (
     <div className="Emailcontainer">
       <div className="Emailcontact-box">
-        <div className="left">
-          {/* <img src="/TrendingCrafts.jpg" alt="" /> */}
+        <div className="Emailleft">
+          <img src="/TrendingCrafts.jpg" alt="" />
         </div>
         <div className="Emailright">
           <h2>Provide your details below</h2>

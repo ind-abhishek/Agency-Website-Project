@@ -5,6 +5,7 @@ import "./App.css";
 import Soon from "./screen/Soon";
 import Notice from "./component/Notice";
 import Refund from "./screen/Refund";
+import Footer from "./component/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/Refund" element={<Refund />} />
         {/* Define other routes as needed */}
       </Routes>
+      <Footer></Footer>
     </Router>
   );
 }

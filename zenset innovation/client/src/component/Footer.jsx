@@ -107,10 +107,15 @@ const Footer = () => {
         <h3>Links</h3>
         <ul>
           <li>
+            <RouterLink to="/">Home</RouterLink>
+          </li>
+          <li>
             <RouterLink to="/blog">Blog</RouterLink>
           </li>
           <li>
-            <RouterLink to="/careers">Careers</RouterLink>
+            <a target="blank" href="https://forms.gle/16jMW8rvJhojEZwF6">
+              Careers
+            </a>
           </li>
           <li>
             <RouterLink to="/refund">Refund & Cancellation</RouterLink>

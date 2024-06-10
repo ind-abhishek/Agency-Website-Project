@@ -627,7 +627,7 @@ const Home = () => {
         <FAQ></FAQ>
       </div>
 
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   );
 };
