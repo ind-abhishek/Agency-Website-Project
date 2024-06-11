@@ -14,7 +14,29 @@
   --card-bg: #34323cb3;
   --nav-bg: #181622;
   --red-col: #d11250;
+
+  --box-card: #ffffff;
+  --card-color: #5c45fd;
 }
+
+/* .light-theme  */
+/* :root {
+  --primary-color: #7661ff;
+  --secondery-black: #282828;
+  --black-bg: #f2f1ff; 
+  --third-gray: #232323;
+  --fourth-white: #15102e;
+  --fifth-violet: #6050dd;
+  --sixth-Lightviolet: #ededfc; 
+  --boder-gray: #c1c5c7; 
+  --card-bg: #d2cdf682; 
+  --nav-bg: #ffffff; 
+
+  --box-card: #6050dd;
+  --card-color: white;
+
+  --red-col: #d11250;
+} */
 
 html,
 body {
@@ -96,7 +118,16 @@ body {
 
 .notbtn3:hover {
   background: var(--primary-color);
+  color: var(--card-color);
   transition: 0.4s;
+}
+
+.priceBtn:hover {
+  color: var(--card-color);
+}
+
+textarea {
+  resize: none;
 }
 
 @media only screen and (max-width: 600px) {

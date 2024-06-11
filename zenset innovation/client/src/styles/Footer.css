@@ -72,8 +72,11 @@
   color: var(--secondery-black);
   transition: all 0.5s ease;
 }
+
+.socialIcon {
+  color: var(--card-color);
+}
 .social-links a:hover {
-  color: var(--fourth-white);
   background-color: var(--secondery-black);
 }
 

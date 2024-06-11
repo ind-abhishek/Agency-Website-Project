@@ -1,5 +1,9 @@
 /* BrandCards */
 
+.brandHead {
+  color: var(--fourth-white);
+}
+
 .brandCard {
   width: 85%;
   overflow: hidden;
@@ -25,8 +29,8 @@
 }
 
 .brandLogoContainer:hover {
-  background: var(--fourth-white);
-  color: var(--primary-color);
+  background: var(--box-card);
+  color: var(--card-color);
   transition: 0.5s;
 }
 

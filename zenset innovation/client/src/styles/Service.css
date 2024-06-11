@@ -1,5 +1,6 @@
-/* Service */
-
+.serviceWrapper {
+  color: var(--fourth-white);
+}
 .servCard {
   background-color: var(--card-bg);
   padding: 18px;
@@ -43,9 +44,10 @@
 }
 
 .servNext:hover {
-  background-color: var(--fourth-white);
-  color: var(--secondery-black);
-  transition: 0.6s;
+  background-color: var(--box-card);
+  color: var(--card-color);
+
+  transition: 0.5s;
 }
 
 @media only screen and (max-width: 600px) {

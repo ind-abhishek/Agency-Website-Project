@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       {/* <Notice></Notice> */}
-      <Navbar />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Refund" element={<Refund />} />

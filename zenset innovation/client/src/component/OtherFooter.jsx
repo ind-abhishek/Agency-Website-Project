@@ -4,7 +4,7 @@ import { Link, Events, scrollSpy } from "react-scroll";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { Link as RouterLink } from "react-router-dom"; // Import Link from react-router-dom
 
-const Footer = () => {
+const OtherFooter = () => {
   const [activeLink, setActiveLink] = useState("Hero");
 
   useEffect(() => {
@@ -72,19 +72,19 @@ const Footer = () => {
         <h3>Follow Us</h3>
         <div className="social-links">
           <a href="https://www.facebook.com/cyberzet.solutions" target="blank">
-            <FaFacebook className="socialIcon" />
+            <FaFacebook />
           </a>
           <a href="https://x.com/CyberzetDigital" target="blank">
-            <FaTwitter className="socialIcon" />
+            <FaTwitter />
           </a>
           <a href="https://www.instagram.com/cyberzet.solutions" target="blank">
-            <FaInstagram className="socialIcon" />
+            <FaInstagram />
           </a>
           <a
             href="https://www.linkedin.com/company/cyberzet-solutions"
             target="blank"
           >
-            <FaLinkedin className="socialIcon" />
+            <FaLinkedin />
           </a>
         </div>
       </div>
@@ -92,4 +92,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default OtherFooter;
