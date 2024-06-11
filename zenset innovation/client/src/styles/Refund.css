@@ -12,24 +12,29 @@
   margin-bottom: 30px;
   position: relative;
   z-index: 999;
-  color: var(--fifth-violet);
+  color: var(--fourth-white);
 }
 
 .refundDesc {
   font-size: 15px;
   width: 90%;
+  color: var(--third-gray);
 }
 
 .texthead h3 {
   margin-top: 15px;
   margin-bottom: 15px;
   font-weight: 500;
+  color: var(--fifth-violet);
+  border-bottom: 2px solid var(--third-gray);
+  padding-bottom: 1%;
+  width: fit-content;
 }
 .refundDecsContentent {
   position: relative;
   z-index: 999;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: var(--third-gray);
+  color: var(--fourth-white);
   font-size: 14px;
 }
