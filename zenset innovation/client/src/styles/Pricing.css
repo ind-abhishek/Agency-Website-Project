@@ -16,6 +16,7 @@
   margin: 2px 0px 2px 0px;
   font-size: 35px;
   font-weight: 500;
+  color: var(--fourth-white);
 }
 
 .priceDesc {

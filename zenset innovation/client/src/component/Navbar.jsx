@@ -3,19 +3,35 @@ import { Link } from "react-scroll";
 import { MdArrowOutward } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
 import "../styles/Navbar.css";
-import "../styles/ThemeToggle.css"; // Add this import for the toggle styles
+import "../styles/ThemeToggle.css";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true); // Default to dark mode
 
+  // Function to detect system theme preference
+  const detectSystemTheme = () => {
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+    setDarkMode(prefersDark);
+  };
+
+  // Apply theme based on darkMode state
   useEffect(() => {
+    const rootElement = document.documentElement;
     if (darkMode) {
-      document.body.classList.add("dark-mode");
+      rootElement.classList.remove("light-mode");
+      rootElement.classList.add("dark-mode");
     } else {
-      document.body.classList.remove("dark-mode");
+      rootElement.classList.remove("dark-mode");
+      rootElement.classList.add("light-mode");
     }
   }, [darkMode]);
+
+  useEffect(() => {
+    detectSystemTheme(); // Detect system theme on component mount
+  }, []);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -27,7 +43,7 @@ const Navbar = () => {
   };
 
   const handleThemeChange = () => {
-    setDarkMode(!darkMode);
+    setDarkMode((prevMode) => !prevMode);
   };
 
   return (
@@ -153,7 +169,6 @@ const Navbar = () => {
 
             <li>
               {/* Theme Switcher */}
-
               <label className="theme-switcher">
                 <input
                   className="toggle-checkbox"
@@ -179,7 +194,6 @@ const Navbar = () => {
                   </div>
                 </div>
               </label>
-
               {/* Theme Switcher End*/}
             </li>
           </ul>

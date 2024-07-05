@@ -30,7 +30,7 @@
 .footer p,
 .footer ul,
 .footer a {
-  margin: 5px 0;
+  margin: 6px 0;
   color: var(--third-gray);
   text-decoration: none;
 }

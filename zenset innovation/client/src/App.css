@@ -17,26 +17,29 @@
 
   --box-card: #ffffff;
   --card-color: #5c45fd;
+
+  --btn3-color: #ffffff;
 }
 
-/* .light-theme  */
-/* :root {
+/* Light theme */
+:root.light-mode {
   --primary-color: #7661ff;
   --secondery-black: #282828;
-  --black-bg: #f2f1ff; 
+  --black-bg: #f2f1ff;
   --third-gray: #232323;
   --fourth-white: #15102e;
   --fifth-violet: #6050dd;
-  --sixth-Lightviolet: #ededfc; 
-  --boder-gray: #c1c5c7; 
-  --card-bg: #d2cdf682; 
-  --nav-bg: #ffffff; 
+  --sixth-Lightviolet: #ededfc;
+  --boder-gray: #c1c5c789;
+  --card-bg: #d2cdf682;
+  --nav-bg: #ffffff;
+  --red-col: #d11250;
 
   --box-card: #6050dd;
   --card-color: white;
 
-  --red-col: #d11250;
-} */
+  --btn3-color: #ffffff;
+}
 
 html,
 body {
@@ -118,13 +121,21 @@ body {
 
 .notbtn3:hover {
   background: var(--primary-color);
-  color: var(--card-color);
+  color: var(--btn3-color);
   transition: 0.4s;
 }
 
 .priceBtn:hover {
-  color: var(--card-color);
+  color: var(--btn3-color);
 }
+
+.priceIcon2 {
+  color: rgb(255, 170, 0);
+  font-size: 18px;
+}
+/* .getStarted {
+  color: green;
+} */
 
 textarea {
   resize: none;

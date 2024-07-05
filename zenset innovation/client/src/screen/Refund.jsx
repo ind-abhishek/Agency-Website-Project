@@ -3,6 +3,7 @@ import "../styles/Refund.css";
 import BgLine from "../component/BgLine";
 
 import OtherNavbar from "../component/OtherNavbar";
+
 const Refund = () => {
   return (
     <>
@@ -12,97 +13,60 @@ const Refund = () => {
           <BgLine className="opacity-10"></BgLine>
           <h1 className="refundTitel">Refund & Cancellation</h1>
           <p className="refundDesc">
-            Our refund policy has been designed in such a way which makes easy
-            for our clients to understand. Flown Developer will deliver a refund
-            under the circumstances which has been planned in our refund policy.
-            Please read the below refund policies carefully:
+            Our refund and cancellation policy is designed to ensure clarity and
+            transparency. Please read the following policy carefully to
+            understand the circumstances under which refunds and cancellations
+            are granted.
           </p>
           <div className="texthead">
-            <h3>Web Development & Design Policy:</h3>
+            <h3>Refund Policy:</h3>
             <div>
               <p className="refundDecsContentent">
-                Our policy lasts 30 days. If 30 days have gone by since your
-                purchase, unfortunately, we can’t offer you a refund or
-                exchange.
+                Refunds are available for our services under the following
+                conditions:
               </p>
 
               <p className="refundDecsContentent">
-                To be eligible for a return, your item must be unused and in the
-                same condition that you received it. It must also be in the
-                original packaging.
+                If a project has not been initiated by our team, a full refund
+                can be requested within 14 days of making the payment.
               </p>
 
               <p className="refundDecsContentent">
-                Several types of goods are exempt from being returned.
-                Perishable goods such as food, flowers, newspapers or magazines
-                cannot be returned. We also do not accept products that are
-                intimate or sanitary goods, hazardous materials, or flammable
-                liquids or gases.
+                If a project is in progress but not completed, a partial refund
+                can be requested. The amount will be based on the work completed
+                up to the cancellation point.
               </p>
 
               <p className="refundDecsContentent">
-                Additional non-returnable items: Gift cards Downloadable
-                software products Some health and personal care items
+                Completed projects or services that have been delivered and
+                accepted by the client are not eligible for a refund.
               </p>
 
               <p className="refundDecsContentent">
-                To complete your return, we require a receipt or proof of
-                purchase.
+                To request a refund, please contact us at info@cyberzet.com with
+                your project details and reason for the refund request.
               </p>
 
               <p className="refundDecsContentent">
-                Please do not send your purchase back to the manufacturer.
+                Once we receive your request, we will review it and notify you
+                of the approval or rejection of your refund. Approved refunds
+                will be processed within 14 business days.
               </p>
 
               <p className="refundDecsContentent">
-                There are certain situations where only partial refunds are
-                granted: (if applicable)
+                If your refund is approved, it will be processed, and a credit
+                will be applied to your original method of payment.
               </p>
 
-              <p className="refundDecsContentent">
-                Book with obvious signs of use
-              </p>
+              <p className="refundDecsContentent">Late or Missing Refunds:</p>
 
               <p className="refundDecsContentent">
-                CD, DVD, VHS tape, software, video game, cassette tape, or vinyl
-                record that has been opened.
-              </p>
-
-              <p className="refundDecsContentent">
-                Any item not in its original condition is damaged or missing
-                parts for reasons not due to our error.
-              </p>
-
-              <p className="refundDecsContentent">
-                Any item that is returned more than 30 days after delivery
-              </p>
-
-              <p className="refundDecsContentent">Refunds (if applicable)</p>
-
-              <p className="refundDecsContentent">
-                Once your return is received and inspected, we will send you an
-                email to notify you that we have received your returned item. We
-                will also notify you of the approval or rejection of your
-                refund.
-              </p>
-
-              <p className="refundDecsContentent">
-                If you are approved, then your refund will be processed, and a
-                credit will automatically be applied to your credit card or
-                original method of payment, within a certain amount of days.
-              </p>
-
-              <p className="refundDecsContentent">
-                Late or missing refunds (if applicable)
-              </p>
-
-              <p className="refundDecsContentent">
-                If you haven’t received a refund yet, first check your bank
+                If you haven’t received a refund yet, please check your bank
                 account again.
               </p>
 
               <p className="refundDecsContentent">
-                Then contact your credit card company, it may take some time
+                Then contact your credit card company, as it may take some time
                 before your refund is officially posted.
               </p>
 
@@ -112,63 +76,58 @@ const Refund = () => {
               </p>
 
               <p className="refundDecsContentent">
-                If you’ve done all of this and you still have not received your
-                refund yet, please contact us at info@cyberzet.com
+                If you’ve done all of this and still have not received your
+                refund, please contact us at info@cyberzet.com.
               </p>
 
-              <p className="refundDecsContentent">Sale items (if applicable)</p>
+              <p className="refundDecsContentent">Sale Items:</p>
 
               <p className="refundDecsContentent">
-                Only regular-priced items may be refunded, unfortunately, sale
-                items cannot be refunded.
+                Only regular-priced services may be refunded; unfortunately,
+                sale items cannot be refunded.
               </p>
+            </div>
+          </div>
 
-              <p className="refundDecsContentent">Exchanges (if applicable)</p>
-
+          <div className="texthead">
+            <h3>Cancellation Policy:</h3>
+            <div>
               <p className="refundDecsContentent">
-                We only replace items if they are defective or damaged. If you
-                need to exchange it for the same item, send us an email at
-                info@cyberzet.com
-              </p>
-
-              <p className="refundDecsContentent">Gifts</p>
-
-              <p className="refundDecsContentent">
-                If the item was marked as a gift when purchased and shipped
-                directly to you, you’ll receive a gift credit for the value of
-                your return. Once the returned item is received, a gift
-                certificate will be mailed to you.
+                Cancellations can be requested under the following conditions:
               </p>
 
               <p className="refundDecsContentent">
-                If the item wasn’t marked as a gift when purchased, or the gift
-                giver had the order shipped to themselves to give to you later,
-                we will send a refund to the gift giver and he will find out
-                about your return.
-              </p>
-
-              <p className="refundDecsContentent">Shipping</p>
-              <p className="refundDecsContentent">
-                To return your product, you should mail your product to A 140,
-                Sector 63 Noida (201301)
+                If you wish to cancel a project before our team has started
+                working on it, you can request a full refund within 14 days of
+                making the payment.
               </p>
 
               <p className="refundDecsContentent">
-                You will be responsible for paying for your own shipping costs
-                for returning your item. Shipping costs are non-refundable. If
-                you receive a refund, the cost of return shipping will be
-                deducted from your refund.
+                For projects that are already in progress, you may request a
+                cancellation, and we will provide a partial refund based on the
+                work completed up to the cancellation point.
               </p>
 
               <p className="refundDecsContentent">
-                Depending on where you live, the time it may take for your
-                exchanged product to reach you may vary.
+                Once a project is completed and delivered, cancellations are not
+                possible.
               </p>
 
               <p className="refundDecsContentent">
-                If you are shipping an item over $75, you should consider using
-                a trackable shipping service or purchasing shipping insurance.
-                We don’t guarantee that we will receive your returned item.
+                To request a cancellation, please contact us at
+                info@cyberzet.com with your project details and reason for the
+                cancellation request.
+              </p>
+
+              <p className="refundDecsContentent">
+                We will review your request and notify you of the approval or
+                rejection of your cancellation. Approved cancellations will
+                result in a refund processed within 14 business days.
+              </p>
+
+              <p className="refundDecsContentent">
+                If you have any questions about our refund and cancellation
+                policy, please contact us at info@cyberzet.com.
               </p>
             </div>
           </div>

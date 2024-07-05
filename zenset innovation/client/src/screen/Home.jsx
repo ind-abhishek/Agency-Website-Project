@@ -439,10 +439,21 @@ const Home = () => {
                     <IoCheckmarkDoneCircleSharp className="inline priceIcon" />
                     Annual Renewal For Hosting Rs.3000.
                   </p>
+
+                  <br />
+                  <br />
+                  <br />
                 </div>
 
-                <button className="notbtn3 priceBtn">
-                  Get started <MdArrowOutward className="inline priceIcon2" />
+                <button
+                  className="notbtn3 priceBtn"
+                  onClick={() =>
+                    (window.location.href = "https://rzp.io/l/plan-first")
+                  }
+                >
+                  <span className="getStarted">
+                    Get started <MdArrowOutward className="inline priceIcon2" />
+                  </span>
                 </button>
               </div>
 
@@ -526,9 +537,15 @@ const Home = () => {
                   </p>
                 </div>
 
-                <button className="notbtn3 priceBtn">
-                  Get started
-                  <MdArrowOutward className="inline priceIcon2" />
+                <button
+                  className="notbtn3 priceBtn"
+                  onClick={() =>
+                    (window.location.href = "https://rzp.io/l/plan-second")
+                  }
+                >
+                  <span className="getStarted">
+                    Get started <MdArrowOutward className="inline priceIcon2" />
+                  </span>
                 </button>
               </div>
 
@@ -612,8 +629,16 @@ const Home = () => {
                   </p>
                 </div>
 
-                <button className="notbtn3 priceBtn">
-                  Get started <MdArrowOutward className="inline priceIcon2" />
+                <button
+                  className="notbtn3 priceBtn"
+                  onClick={() =>
+                    (window.location.href =
+                      "https://pages.razorpay.com/plan-custom")
+                  }
+                >
+                  <span className="getStarted">
+                    Get started <MdArrowOutward className="inline priceIcon2" />
+                  </span>
                 </button>
               </div>
             </div>

@@ -44,7 +44,7 @@ const EmailForm = () => {
     <div className="Emailcontainer">
       <div className="Emailcontact-box">
         <div className="Emailleft">
-          <img src="/contactUs.png" alt="" />
+          <img src="/contactUs.png" alt="Send Enquiry" />
         </div>
         <div className="Emailright">
           <h2>Provide your details below</h2>

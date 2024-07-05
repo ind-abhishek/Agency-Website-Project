@@ -15,7 +15,7 @@
   height: 100%;
   left: 0;
   top: 0;
-  background: url("/TrendingCrafts.jpg") no-repeat center;
+  background: url("") no-repeat center;
   background-size: cover;
   filter: blur(50px);
   z-index: -1;
@@ -41,9 +41,12 @@
   height: 100%;
   width: 100%;
   border-radius: 10px 0px 0px 10px;
+  z-index: 999;
+  position: relative;
 }
+
 .Emailright {
-  padding: 15px 50px 15px 40px;
+  padding: 15px 50px 15px 50px;
 }
 
 .Emailright h2 {
@@ -87,9 +90,13 @@
   transition: 0.3s;
 }
 
-.EmailField:hover {
-  color: var(--card-color);
-  background-color: var(--primary-color);
+.EmailField:focus {
+  color: black;
+  background-color: #e8f0fe;
+}
+
+.EmailField:focus::placeholder {
+  color: black;
 }
 
 .emailForm textarea {
@@ -120,5 +127,9 @@
   }
   .left {
     height: 200px;
+  }
+
+  .Emailright {
+    padding: 15px;
   }
 }

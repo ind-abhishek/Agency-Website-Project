@@ -8,7 +8,7 @@
   height: 100vh;
   margin: 50px;
   padding: 150px;
-  opacity: 80%;
+  opacity: 65%;
 }
 
 .bgLine1 {
@@ -30,6 +30,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .bgLine {
+    opacity: 35%;
+  }
+
   .bgLine1 {
     right: 10px;
   }

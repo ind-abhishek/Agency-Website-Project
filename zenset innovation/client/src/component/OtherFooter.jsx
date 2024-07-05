@@ -39,8 +39,15 @@ const OtherFooter = () => {
   return (
     <footer className="footer">
       <div className="footer-column">
-        <img src="/zenLogo.png" alt="Brand Logo" className="footer-logo" />
+        <img src="/cyberZet.png" alt="Cyberzet-Logo" className="footer-logo" />
       </div>
+      <div className="footer-column">
+        <h3>Office Address</h3>
+        <p>A12, Hazipur, Sec 104,</p>
+        <p>Noida, Uttar Pradash, </p>
+        <p>201301, India</p>
+      </div>
+
       <div className="footer-column">
         <h3>Office Address</h3>
         <p>1234 Street Name</p>
@@ -49,21 +56,20 @@ const OtherFooter = () => {
       </div>
 
       <div className="footer-column">
-        <h3>Links</h3>
+        <h3>Nagivation</h3>
         <ul>
           <li>
             <RouterLink to="/">Home</RouterLink>
           </li>
           <li>
-            <RouterLink to="/blog">Blog</RouterLink>
+            <a target="blank" href="https://blog.cyberzet.com">
+              Blogs
+            </a>
           </li>
           <li>
             <a target="blank" href="https://forms.gle/16jMW8rvJhojEZwF6">
               Careers
             </a>
-          </li>
-          <li>
-            <RouterLink to="/refund">Refund & Cancellation</RouterLink>
           </li>
         </ul>
       </div>
@@ -72,19 +78,21 @@ const OtherFooter = () => {
         <h3>Follow Us</h3>
         <div className="social-links">
           <a href="https://www.facebook.com/cyberzet.solutions" target="blank">
-            <FaFacebook />
+            <FaFacebook className="socialIcon" />
           </a>
-          <a href="https://x.com/CyberzetDigital" target="blank">
-            <FaTwitter />
-          </a>
+
+          {/* <a href="https://x.com/CyberzetDigital" target="blank">
+            <FaTwitter className="socialIcon" />
+          </a> */}
+
           <a href="https://www.instagram.com/cyberzet.solutions" target="blank">
-            <FaInstagram />
+            <FaInstagram className="socialIcon" />
           </a>
           <a
             href="https://www.linkedin.com/company/cyberzet-solutions"
             target="blank"
           >
-            <FaLinkedin />
+            <FaLinkedin className="socialIcon" />
           </a>
         </div>
       </div>

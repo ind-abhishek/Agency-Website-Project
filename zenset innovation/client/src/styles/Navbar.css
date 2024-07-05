@@ -15,8 +15,8 @@ nav {
   z-index: 99999;
   position: relative;
   font-size: 15px;
-  padding-right: 5px;
-  padding-left: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
 
   overflow: hidden;
   margin-left: 0;
@@ -102,6 +102,12 @@ nav ul .nav-item.active a {
 }
 
 @media only screen and (max-width: 600px) {
+  nav {
+    border: 1px solid var(--boder-gray);
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
   .cyberzet {
     width: 130px;
     margin-left: 6px;
@@ -125,4 +131,22 @@ nav ul .nav-item.active a {
 
 body.no-scroll {
   overflow: hidden;
+}
+
+@media only screen and (max-width: 769px) {
+  .nav-item a {
+    font-size: 11px;
+    font-weight: 500;
+  }
+
+  .nav-item {
+    margin-left: 25px !important;
+  }
+  .cyberzet {
+    width: 145px;
+  }
+
+  .letTalk {
+    font-size: 12px;
+  }
 }
