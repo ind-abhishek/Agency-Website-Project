@@ -1,12 +1,18 @@
 import React from "react";
 import "../styles/Refund.css";
 import BgLine from "../component/BgLine";
-
 import OtherNavbar from "../component/OtherNavbar";
+import { Helmet } from "react-helmet";
 
 const Refund = () => {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Refund & Cancellation - CyberZet Digital Solutions</title>
+        <link rel="canonical" href="https://cyberzet.com/refund" />
+      </Helmet>
+
       <OtherNavbar></OtherNavbar>
       <div className="pageContainer">
         <div className="refundContainer">
@@ -18,6 +24,11 @@ const Refund = () => {
             understand the circumstances under which refunds and cancellations
             are granted.
           </p>
+
+          {/* <div className="businessName">
+            <strong>Abhishek Kumar Sharma</strong>
+          </div> */}
+
           <div className="texthead">
             <h3>Refund Policy:</h3>
             <div>
@@ -43,8 +54,8 @@ const Refund = () => {
               </p>
 
               <p className="refundDecsContentent">
-                To request a refund, please contact us at info@cyberzet.com with
-                your project details and reason for the refund request.
+                To request a refund, please contact us at support@cyberzet.com
+                with your project details and reason for the refund request.
               </p>
 
               <p className="refundDecsContentent">
@@ -77,7 +88,7 @@ const Refund = () => {
 
               <p className="refundDecsContentent">
                 If you’ve done all of this and still have not received your
-                refund, please contact us at info@cyberzet.com.
+                refund, please contact us at support@cyberzet.com.
               </p>
 
               <p className="refundDecsContentent">Sale Items:</p>
@@ -115,8 +126,8 @@ const Refund = () => {
 
               <p className="refundDecsContentent">
                 To request a cancellation, please contact us at
-                info@cyberzet.com with your project details and reason for the
-                cancellation request.
+                support@cyberzet.com with your project details and reason for
+                the cancellation request.
               </p>
 
               <p className="refundDecsContentent">
@@ -125,9 +136,18 @@ const Refund = () => {
                 result in a refund processed within 14 business days.
               </p>
 
-              <p className="refundDecsContentent">
+              <p className="refundDecsContentent decGz">
                 If you have any questions about our refund and cancellation
-                policy, please contact us at info@cyberzet.com.
+                policy, please contact us at support@cyberzet.com.
+              </p>
+
+              <hr className="hrLine" />
+
+              <p className="refundDecsfooter">
+                All refunds will be initiated by{" "}
+                <div className="businessName">
+                  <strong>Abhishek Kumar Sharma</strong>.
+                </div>
               </p>
             </div>
           </div>

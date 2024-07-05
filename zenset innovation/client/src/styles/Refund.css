@@ -39,9 +39,29 @@
   font-size: 14px;
 }
 
+.decGz {
+  margin-bottom: 20px;
+}
+
+.hrLine {
+  border-color: var(--third-gray);
+}
+
+.refundDecsfooter {
+  color: var(--fourth-white);
+  margin-top: 20px;
+  text-align: center;
+}
+
+.businessName {
+  font-size: 1em;
+  margin-top: 5px;
+  color: #ff6600; /* Adjust color as needed */
+}
+
 @media only screen and (max-width: 600px) {
   .refundContainer {
-    color: white;
+    color: var(--fourth-white);
     padding-left: 5%;
     padding-right: 5%;
   }
@@ -64,6 +84,13 @@
   }
 
   .refundDecsContentent {
+    font-size: 13px;
+  }
+
+  .refundDecsfooter {
+    font-size: 14px;
+  }
+  .businessName {
     font-size: 13px;
   }
 }

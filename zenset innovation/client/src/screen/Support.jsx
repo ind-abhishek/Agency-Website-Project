@@ -2,10 +2,17 @@ import React from "react";
 import "../styles/Support.css";
 import BgLine from "../component/BgLine";
 import OtherNavbar from "../component/OtherNavbar";
+import { Helmet } from "react-helmet";
 
 const Support = () => {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Help & Support - CyberZet Digital Solutions</title>
+        <link rel="canonical" href="https://cyberzet.com/Support" />
+      </Helmet>
+
       <OtherNavbar />
       <div className="pageContainer">
         <div className="SupportContainer">
@@ -20,8 +27,8 @@ const Support = () => {
             <div>
               <p className="SupportDecsContentent">
                 Our support team is available to assist you during our business
-                hours. Please contact us at info@cyberzet.com for any assistance
-                you may need.
+                hours. Please contact us at support@cyberzet.com for any
+                assistance you may need.
               </p>
 
               <p className="SupportDecsContentent">
@@ -31,8 +38,8 @@ const Support = () => {
               </p>
 
               <p className="SupportDecsContentent">
-                For urgent issues, please call our support hotline at [Your
-                Phone Number].
+                For urgent issues, please call our support hotline at +91
+                9891075410.
               </p>
 
               <p className="SupportDecsContentent">
@@ -59,7 +66,7 @@ const Support = () => {
 
               <p className="SupportDecsContentent">
                 For more information or specific inquiries, feel free to reach
-                out to our support team at info@cyberzet.com.
+                out to our support team at support@cyberzet.com.
               </p>
             </div>
           </div>

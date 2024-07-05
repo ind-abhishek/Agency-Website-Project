@@ -7,13 +7,14 @@ const EmailForm = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+  const [successMessage, setSuccessMessage] = useState(""); // State for success message
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     // Your EmailJS service ID, template ID, and Public Key
-    const serviceId = "service_jmcus8g";
-    const templateId = "template_yincaed";
+    const serviceId = "service_infoabhieee";
+    const templateId = "template_t5gzbwo";
     const publicKey = "HJBNJXFOaLJM78sI0";
 
     // Create a new object that contains dynamic template params
@@ -34,6 +35,7 @@ const EmailForm = () => {
         setEmail("");
         setPhone("");
         setMessage("");
+        setSuccessMessage("We will get back to you soon!"); // Set success message
       })
       .catch((error) => {
         console.error("Error sending email:", error);
@@ -48,6 +50,10 @@ const EmailForm = () => {
         </div>
         <div className="Emailright">
           <h2>Provide your details below</h2>
+          {successMessage && (
+            <p className="successMessage">{successMessage}</p>
+          )}{" "}
+          {/* Display success message */}
           <form onSubmit={handleSubmit} className="emailForm">
             <input
               type="text"

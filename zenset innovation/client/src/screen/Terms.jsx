@@ -2,10 +2,17 @@ import React from "react";
 import "../styles/Terms.css";
 import BgLine from "../component/BgLine";
 import OtherNavbar from "../component/OtherNavbar";
+import { Helmet } from "react-helmet";
 
 const Terms = () => {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Terms & Conditions - CyberZet Digital Solutions</title>
+        <link rel="canonical" href="https://cyberzet.com/Terms" />
+      </Helmet>
+
       <OtherNavbar />
       <div className="pageContainer">
         <div className="TermsContainer">
@@ -55,22 +62,23 @@ const Terms = () => {
             <h3>Governing Law</h3>
             <p className="TermsDecsContentent">
               These terms and conditions shall be governed by and construed in
-              accordance with the laws of [Your Country/State], without regard
-              to its conflict of law provisions.
+              accordance with the laws of India/Uttar Pradesh, without regard to
+              its conflict of law provisions.
             </p>
 
             <h3>Changes to Terms</h3>
             <p className="TermsDecsContentent">
-              Cyberzet Digital Solutions reserves the right, at our sole
-              discretion, to modify or replace these terms and conditions at any
-              time. It is your responsibility to check these terms and
+              Cyberzet Digital Solutions, managed by business name{" "}
+              <strong>Abhishek Kumar Sharma</strong>, reserves the right, at our
+              sole discretion, to modify or replace these terms and conditions
+              at any time. It is your responsibility to check these terms and
               conditions periodically for changes.
             </p>
 
             <h3>Contact Us</h3>
             <p className="TermsDecsContentent">
               If you have any questions about these terms and conditions, please
-              contact us at info@cyberzet.com.
+              contact us at support@cyberzet.com.
             </p>
           </div>
         </div>

@@ -2,10 +2,17 @@ import React from "react";
 import "../styles/Policy.css";
 import BgLine from "../component/BgLine";
 import OtherNavbar from "../component/OtherNavbar";
+import { Helmet } from "react-helmet";
 
 const Policy = () => {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Privacy & Policy - CyberZet Digital Solutions</title>
+        <link rel="canonical" href="https://cyberzet.com/Policy" />
+      </Helmet>
+
       <OtherNavbar />
       <div className="pageContainer">
         <div className="PolicyContainer">
@@ -74,9 +81,12 @@ const Policy = () => {
             </p>
             <h3>Changes to Our Privacy Policy:</h3>
             <p className="PolicyDecsContentent">
-              If we decide to change our privacy policy, we will post those
-              changes on this page. Policy changes will apply only to
-              information collected after the date of the change.
+              Cyberzet Digital Solutions, managed by business name{" "}
+              <strong>Abhishek Kumar Sharma</strong>, reserves the right to
+              change this privacy policy at our sole discretion. If we decide to
+              change our privacy policy, we will post those changes on this
+              page. Policy changes will apply only to information collected
+              after the date of the change.
             </p>
             <h3>Contacting Us:</h3>
             <p className="PolicyDecsContentent">
@@ -84,10 +94,8 @@ const Policy = () => {
               contact us using the information below:
               <br />
               Cyberzet Digital Solutions
-              {/* <br />
-              A 140, Sector 63 Noida (201301) */}
               <br />
-              Email: info@cyberzet.com
+              Email: support@cyberzet.com
             </p>
           </div>
         </div>

@@ -24,6 +24,7 @@ import Footer from "../component/Footer";
 
 import FAQ from "../component/FAQ";
 import EmailForm from "../component/EmailForm";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   useEffect(() => {
@@ -54,6 +55,12 @@ const Home = () => {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Home - Cyberzet Digital Solutions</title>
+        <link rel="canonical" href="https://cyberzet.com" />
+      </Helmet>
+
       {/* <Notice /> */}
       <Navbar />
 
