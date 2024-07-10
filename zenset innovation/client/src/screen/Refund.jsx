@@ -2,13 +2,17 @@ import React from "react";
 import "../styles/Refund.css";
 import BgLine from "../component/BgLine";
 import OtherNavbar from "../component/OtherNavbar";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const Refund = () => {
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
+        <meta
+          name="description"
+          content="Refund and Cancellation Page of CyberZet Digital Solutions"
+        />
         <title>Refund & Cancellation - CyberZet Digital Solutions</title>
         <link rel="canonical" href="https://cyberzet.com/refund" />
       </Helmet>

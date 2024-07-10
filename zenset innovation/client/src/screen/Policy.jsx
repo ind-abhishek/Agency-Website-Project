@@ -2,13 +2,17 @@ import React from "react";
 import "../styles/Policy.css";
 import BgLine from "../component/BgLine";
 import OtherNavbar from "../component/OtherNavbar";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const Policy = () => {
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
+        <meta
+          name="description"
+          content="Privacy and Policy Page of CyberZet Digital Solutions"
+        />
         <title>Privacy & Policy - CyberZet Digital Solutions</title>
         <link rel="canonical" href="https://cyberzet.com/Policy" />
       </Helmet>

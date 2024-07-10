@@ -24,7 +24,7 @@ import Footer from "../component/Footer";
 
 import FAQ from "../component/FAQ";
 import EmailForm from "../component/EmailForm";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   useEffect(() => {
@@ -57,6 +57,10 @@ const Home = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
+        <meta
+          name="description"
+          content=" Your expert in web development and digital solutions. Specializing in design, development, and digital marketing to enhance your online presence and business growth."
+        />
         <title>Home - Cyberzet Digital Solutions</title>
         <link rel="canonical" href="https://cyberzet.com" />
       </Helmet>

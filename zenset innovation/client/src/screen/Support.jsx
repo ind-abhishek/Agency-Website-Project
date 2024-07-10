@@ -2,13 +2,17 @@ import React from "react";
 import "../styles/Support.css";
 import BgLine from "../component/BgLine";
 import OtherNavbar from "../component/OtherNavbar";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const Support = () => {
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
+        <meta
+          name="description"
+          content="Help and Support Page of CyberZet Digital Solutions"
+        />
         <title>Help & Support - CyberZet Digital Solutions</title>
         <link rel="canonical" href="https://cyberzet.com/Support" />
       </Helmet>
