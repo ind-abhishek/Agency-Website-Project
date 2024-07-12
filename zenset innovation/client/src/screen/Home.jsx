@@ -312,12 +312,16 @@ const Home = () => {
               <div className="projectCard rounded-lg">
                 <img
                   className="project-image"
-                  src="https://cdn.dribbble.com/userupload/14000097/file/original-0848113383fcfbef2b8d4d70ca0393e1.png?resize=400x300&vertical=center"
+                  src="/gamexation.jpg"
                   alt="Project Image"
                 />
                 <div className="cardOverlay">
                   <div className="overlay-content">
-                    <a href="#" target="blank" className="inline">
+                    <a
+                      href="https://www.gamexation.com/"
+                      target="blank"
+                      className="inline"
+                    >
                       See Project <FaArrowRight className="inline" />
                     </a>
                   </div>

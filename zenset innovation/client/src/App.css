@@ -86,6 +86,7 @@ body {
   margin-bottom: 5px;
   z-index: 999;
   position: relative;
+  color: var(--fourth-white);
 }
 
 .desc {
@@ -170,5 +171,13 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+  }
+
+  .notbtn3 {
+    margin-top: 16px;
+    padding: 10px 25px 10px 25px;
+    border: 1px solid var(--primary-color);
+    z-index: 999;
+    font-size: 15px;
   }
 }
